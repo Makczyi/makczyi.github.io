@@ -1,110 +1,110 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    .collapsible {
-      background-color: black;
-      color: white;
-      cursor: pointer;
-      padding: 20px;
-      width: 100%;
-      test-align: left;
-      outline: none;
-      font-size: 20px;
-    }
+  <head lang="en>
+    <meta name="viewport content="width=device-width, initial-scale=1.0">
+    <style>
 
-    .active, .collapsible:hover {
-      background-color: maroon;
-    }
+      .collapsible {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        border: ;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+      }
 
-    .content {
-      padding: 0 18px;
-      display: none;
-      overflow: hidden;
-      background-color: #f1f1f1;
-    }
+      .active.collapsible:hover {
+        background-color: maroon;
+      }
 
-    body, html {
-      background: repeating-radial-gradient(ellipse, #89f336 97%, #ff13f0 100%);
-      background-size: cover;
-      height: 100%;
-    }
+      .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+      }
 
-    #alertbutton {
-      position: absolute;
-      bottom: -150px;
-      left: 16px;
-      width: 150px;
-      length: 280px;
-      height: 75px;
-      background-color: rgb(137, 243, 54);
-      color: rgb(255, 19, 240);
-      text-weight: 90%;
-      text-size: 60px;
-    }
+      body, html {
+        background: repeating-radial-gradient(ellipse, #89f336 97%, #ff13f0 100%);
+        background-size: cover;
+        height: 100%;
+      }
 
-    h1 {
-      font-size: 70px;
-      background-color: rgb(159, 43, 104);
-      display: inline;
-      color: rgb(255, 19, 240);
-      width: 350px;
-      height: 85px;
-      length: 50px;
-    }
+      #alertbutton {
+        position: absolute;
+        bottom: -150px;
+        left: 16px;
+        width: 150px;
+        length: 280px;
+        height: 75px;
+        background-color: rgb(137, 243, 54);
+        color: rgb(255, 19, 240);
+        font-weight: 90%;
+        font-size: 60px;
+      }
 
-    h3 {
-      font-size: 22px;
-      background-color: rgb(255, 19, 240);
-      color: rgb(137, 243, 54);
-      width: 380px;
-      margin-bottom: 130px;
-    }
+      h1 {
+        font-size: 70px;
+        background-color: rgb(159, 43, 104);
+        display: inline;
+        color: rgb(255, 19, 240);
+        width: 350px;
+        height: 85px;
+        length: 50px;
+      }
 
-    p1 {
-      position: absolute;
-      bottom: -150px;
-      left: 250px;
-      font-size: 20px;
-      background-color: rgb(159, 43, 104);
-      font-weight: 20px;
-      padding: 5px;
-    }
+      h3 {
+        font-size: 22px;
+        background-color: rgb(255, 19, 240);
+        color: rgb(137, 243, 54);
+        width: 380px;
+        margin-bottom: 130px;
+      }
 
-    <div id="HipHop" {
-      background-color: navy;
-    }
-    </style>
+      p1 {
+        position: absolute;
+        bottom: -150px;
+        left: 250px;
+        font-size: 20px;
+        background-color: rgb(159, 43, 104);
+        font-weight: 20px;
+        padding: 5px;
+      }
+
+      <div id="HipHop"{
+        background-color: navy;
+      }
+      </style>
   </head>
   <body>
 
     <h1>Summer</br>Dance</br>Forever '26</h1>
     <h3>Day 4: HipHop & Deep House Forever</h3>
 
-    <button type="button" id="alertbutton" onclick="alert('Hello World!')">Click here for a surprise!</button>
-
-    <button type="button" class="collapsible" id="HipHop">Hip Hop</button>
-    <div class="content"><p>Text</p></div><button type="button" class="collapsible" id="collapse-two">Genre 2</button><div class="content"><p>Text</p>
-    </div><button type="button" class="collapsible" id="collapse-three">Genre 3</button><div class="content"><p>Text</p></div>
+    <button type="button" class="collapsible" id="HipHop">Hip Hop</button><div class="content"><p>Text</p></div>
+    <button type="button" class="collapsible" id="collapse-two">Genre 2</button><div class="content"><p>Text</p></div>
+    <button type="button" class="collapsible" id="collapse-three">Genre 3</button><div class="content"><p>Text</p></div>
 
     <p1>Design by FlwalessRat</p1>
 
     <script>
 
-      function myFunction(){
+      function myFuntion(){
         var popup = document.getElementById("popup");
         popup.classList.toggle("show");
       }
 
-      var coll = document.GetElementsByClassName("collapsible");
+      var coll = document.getElementsByClassName("collapsible");
       var i;
 
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+      for (i = 0; i < coll.length; i++){
+        coll[i].addEventListener("click", function(){
           this.classList.toggle("active");
           var content = this.nextElementSibling;
-          if (content.style.display === "block") {
+          if (content.style.display === "block"){
             content.style.display = "none";
           } else {
             content.style.display = "block";
@@ -112,9 +112,6 @@
         });
       }
     </script>
-
-    
   </body>
- </html>
-
-
+    </style>
+</html>
