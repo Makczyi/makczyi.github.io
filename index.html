@@ -3,30 +3,6 @@
   <head lang="en>
     <meta name="viewport content="width=device-width, initial-scale=1.0">
     <style>
-
-      .collapsible {
-        background-color: black;
-        color: white;
-        cursor: pointer;
-        padding: 20px;
-        width: 100%;
-        border: ;
-        text-align: left;
-        outline: none;
-        font-size: 20px;
-      }
-
-      .active.collapsible:hover {
-        background-color: maroon;
-      }
-
-      .content {
-        padding: 0 18px;
-        display: none;
-        overflow: hidden;
-        background-color: #f1f1f1;
-      }
-
       body, html {
         background: repeating-radial-gradient(ellipse, #89f336 97%, #ff13f0 100%);
         background-size: cover;
@@ -73,16 +49,6 @@
         font-weight: 20px;
         padding: 5px;
       }
-
-      <div id="HipHop"{
-        background-color: navy;
-      }
-
-      .image {
-        display: flex;
-        margin-left: 5px;
-        margin-top: 0;
-      }
       </style>
   </head>
   <body>
@@ -92,41 +58,9 @@
 
     <button type="button" id="alertbutton" onclick="alert('Hello world!')">Click here for a surprise!</button>
 
-    <button type="button" class="collapsible" id="HipHop">Hip Hop</button><div class="content"><div class="image">
-      <img scr="Sabebe.png"><p>Text: text</p></div>
-    <button type="button" class="collapsible" id="collapse-two">Genre 2</button><div class="content"><p>Text</p></div>
-    <button type="button" class="collapsible" id="collapse-three">Genre 3</button><div class="content"><p>Text</p></div>
-
     <p1>Design by FlwalessRat</p1>
 
     <script>
-
-      function myFuntion(){
-        var popup = document.getElementById("popup");
-        popup.classList.toggle("show");
-      }
-
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-
-      for (i = 0; i < coll.length; i++){
-        coll[i].addEventListener("click", function(){
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block"){
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      }
-
-    
-    
-     
-        
-
-    
     </script>
   </body>
     </style>
