@@ -1,6 +1,6 @@
 <!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Locking Forever</title>
 <body>
-  <img src="DJMason.png" alt="MasonDJ" id="Mason" style=float:right;max-width:80%;max-height:100%;top:5px;position:sticky;>
+  <img src="DJMason.png" alt="MasonDJ" class="Mason" style=float:right;max-width:80%;max-height:100%;top:5px;position:sticky;>
 </body>
 <style>
   body, html {
@@ -41,13 +41,20 @@
     margin-bottom:5px;
     max-width:350px;
   }
+  @media only screen and (max-width:500px;) {
+    .album, .Mason {
+      width:100%;
+    }
+  }
 </style>
   <body>
-    <h1 id="genre">Funk</h1>
-    <h2 id="subgenre">Funk / Soul</h2>
-    <img id="albumCover" src="KayGees.png" alt="albumCover">
-    <li id="artist"><b>The Kay Gees</b></li>
-    <li id="songTitle">Kay Gees Theme Song</li>
-    <audio controls><source src="KayGees.mp3"></audio>
+   <div class="album">
+     <h1 id="genre">Funk</h1>
+     <h2 id="subgenre">Funk / Soul</h2>
+     <img id="albumCover" src="KayGees.png" alt="albumCover">
+     <li id="artist"><b>The Kay Gees</b></li>
+     <li id="songTitle">Kay Gees Theme Song</li>
+     <audio controls><source src="KayGees.mp3"></audio>
+   </div>
   </body>
 </html>
