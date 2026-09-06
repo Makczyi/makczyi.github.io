@@ -13,10 +13,11 @@
       background-repeat: repeat;
     }
     .content {
-      padding:0;
-      display:none;
+      padding:0 18px;
+      max-height:0;
       overflow:hidden;
-      background-folor:#f1f1f1;
+      transition:max-height 0.2s ease out;
+      background-color:f1f1f1;
     }
     #albumCover {
       width:250px;
@@ -36,7 +37,16 @@
       font-weight:50%;
       width:350px;
     }
-
+    .collapsible:after {
+      content:'\002B';
+      color:white;
+      font-weight:bold;
+      float:right;
+      margin-left:5px;
+    }
+    .active:after {
+      content:"\2212";
+    }
     .collapsible {
       background-color:maroon;
       color:white;
@@ -50,6 +60,9 @@
       position: absolute;
       left:10px;
       top:250px;
+    }
+    .active, .collapsible:hover{
+      background-color:navy;
     }
   </style>
   <script>
