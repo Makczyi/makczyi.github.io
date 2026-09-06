@@ -3,6 +3,27 @@
   <img src="DJMason.png" alt="MasonDJ" class="Mason" style=float:right;width:400px;top:0;position:sticky;>
 </body>
 <style>
+  .collapsible {
+    background-color:maroon;
+    color:white;
+    cursor:pointer;
+    padding:18px;
+    width:50%;
+    border:none;
+    text-align:none;
+    outline:none;
+    font-size:15px;
+  }
+  .active, .collapsible:hover {
+    background-color:navy;
+  }
+  .content {
+    padding:0 18px;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.2s ease-out;
+    background-color:#f1f1f1;
+  }
   body, html {
     background:repeating-radial-gradient(ellipse, #330413 97%, #FF0000 100%);
     background-size:cover;
@@ -43,9 +64,12 @@
     width:350px;
   }
 </style>
+</head>
   <body>
-     <h1 id="genre">Funk</h1>
-     <h2 id="subgenre">Funk / Soul</h2>
+    <h1 id="genre">Funk</h1>
+    
+  <button class="subgenre">Funk / Soul</button>
+    <div class="content">
      <img id="albumCover"src="KayGees.png"alt="albumCover"><li id="artist"><b>The Kay Gees</b></li><li id="songTitle">Kay Gees Theme Song</li><audio controls><source src="KayGees.mp3"></audio>
     <li></li>
      <img id="albumCover"src="GetUpOrGetOut.png"alt="albumCover"><li id="artist"><b>Bloodstone</b></li><li id="songTitle">Get Up Or Get Out</li><audio controls><source src="GetUpOrGetOut.mp3"></audio>
@@ -88,5 +112,22 @@
     <li></li>
     <img id="albumCover"src="DanceWitMe.png"alt="albumCover"><li id="artist"><b>Rick James</b><li id="songTitle"><b>Dance Wit Me</b></li><audio controls><source src="DanceWitMe.mp3"></audio>
     <li></li>
+    </div>
+    <script>
+      var coll = document.getElementsByClassName("subgenre");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
