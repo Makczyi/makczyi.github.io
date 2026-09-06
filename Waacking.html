@@ -3,66 +3,67 @@
   <img src="DJCooper.png"alt="DJCooper"id="Cooper"style=float:right;width:300px;top:5px;position:sticky;>
 </body>
   <style>
-    .collapsible {
-      background-color:maroon;
-      color:navy;
-      cursor:pointer;
-      padding:18px;
-      width:auto;
-      border:none;
-      text-align:none;
-      outline:none;
-      font-size:15px;
-      top:200px;
-    }
-    .active, .collapsible:hover{
-      background-color:navy;
-    }
-    .content{
-      padding:0;
-      width:25%;
-      overflow:hidden;
-      transition:max-height 0.2s ease-out;
-      background-color:rgb(112,42,99);
-    }
-    body, html {
-      background:repeating-radial-gradient(ellipse, #415253 97%, #FF00FF 100%);
-      background-size:cover;
-      background-repeat:repeat;
-    }
-    #genre{
-      background-color:darkblue;
-      color:white;
-      font-size:50px;
-      font-weight:85%;
-      width:150px;
-      top:180px;
-    }
-    .subgenre{
-      background-color:rgb(112,41,99);
-      color:white;
-      font-size:30px;
-      font-weight:85%;
-      height:50px;
-      width:350px;
-    }
-    #albumCover{
-      width:250px;
-      height:230px;
-    }
-    #artist{
-      color:white;
-      font-size:40px;
-      font-weight:60%;
-      width:350px;
-    }
-    #songTitle{
-      color:white;
-      font-size:30px;
-      font-weight:50%;
-      margin-bottom:5px;
-      width:350px;
-    } 
+   .collapsible {
+    background-color:maroon;
+    color:navy;
+    cursor:pointer;
+    padding:18px;
+    width:auto;
+    border:none;
+    text-align:none;
+    outline:none;
+    font-size:15px;
+    top:200px;
+  }
+  .active, .collapsible:hover {
+    background-color:navy;
+  }
+  .content {
+    padding:0 18px;
+    max-height:0;
+    width:25%;
+    overflow:hidden;
+    transition:max-height 0.2s ease-out;
+    background-color:rgb(112, 41, 99);
+  }
+  body, html {
+    background:repeating-radial-gradient(ellipse, #330413 97%, #FF0000 100%);
+    background-size:cover;
+    background-repeat: repeat;
+  }
+  #genre {
+    background-color:darkblue;
+    color:white;
+    font-size:50px;
+    font-weight:85%;
+    width:150px;
+    top:180px;
+  }
+  .subgenre {
+    background-color: rgb(112, 41, 99);
+    color:white;
+    font-size:30px;
+    font-weight:85%;
+    height:50px;
+    width:350px;
+  }
+  #albumCover {
+    width:250px;
+    height:230px;
+  }
+  #artist {
+    color:white;
+    font-size:40px;
+    font-weight:60%;
+    width:350px;
+  }
+   #songTitle {
+    color:white;
+    font-size:30px;
+    font-weight:50%;
+    margin-bottom:5px;
+    width:350px;
+  }
   </style>
 </head>
   <body>
@@ -154,20 +155,20 @@
        <li></li>
      </div>
   <script>
-    var coll = document.getElementsByClassName("subgenre");
-    var i;
+  var coll = document.getElementsByClassName("subgenre");
+      var i;
 
-    for (i = 0; i < coll.length; i++) {
-     coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }  
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
   </script>
 </body>
 </html>
