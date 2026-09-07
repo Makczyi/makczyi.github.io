@@ -135,8 +135,21 @@
        <img id="albumCover"src="FoxOnTheRun.png"><li id="artist"><b>Sky Trane</b></li><li id="songTitle">Fox On The Run</li><audio controls><source src="FoxOnTheRun.mp3"></audio>
        <li></li>
      </div>
-    
-  </body>
   <script>
+    var coll = document.getElementsByClassName("subgenre");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
   </script>
+  </body>
 </html>
