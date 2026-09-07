@@ -3,12 +3,130 @@
   <img src="DJNuri.png" alt="DJNuri" id="Nuri" style=float:right;width:400px;top:5px;position:sticky;> 
 </body>
   <style>
+    .collapsible {
+      background-color:maroon;
+      color:navy;
+      cursor:pointer;
+      padding:18px;
+      width:350px;
+      border:none;
+      text-align: none;
+      outline:none;
+      font-size:15px;
+      top:200px;
+    }
+    .active, .collapsible:hover {
+      background-color:navy;
+    }
+    .content {
+      padding: 0 18px;
+      max-height:0;
+      width:350px;
+      overflow:hidden;
+      transition:max-height 0.2s ease-out;
+      background-color:rgb(112, 41, 99);
+    } 
     body, html {
       background:repeating-radial-gradient(ellipse, #330415 97%, #F0F0F0 100%);
       background-size:cover;
       background-repeat: repeat;
     }
+    #genre {
+      background-color:darkblue;
+      color:white;
+      font-size:50px;
+      font-weight:85%;
+      width:150px;
+      top:180px;
+    }
+    .subgenre {
+      background-color:rgb(112, 41, 99);
+      color:white;
+      font-size:30px;
+      font-weight:85%;
+      height:50px;
+      width:350px;
+    }
+    #albumCover {
+      width:250px;
+      height:230px;
+    }
+    #artist {
+      color:white;
+      font-size:40px;
+      font-weight:60%;
+      width:350px;
+    }
+    #songTitle {
+      color:white;
+      font-size:30px;
+      font-weight:50%;
+      margin-bottom:5px;
+      width:350px;
+    }
   </style>
+</head>
+  <body>
+    <h1 id="genre">Electronic</h1>
+
+    <button class="subgenre">Electronic/Hip Hop</button>
+     <div class="content">
+       <img id="albumCover"src="Mothership.png"alt="albumCover"><li id="artist"><b>Portformat (opolopo Remix)</b></li><li id="songTitle">Mothership</li><audio controls><source src="Mothership.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="SlowMotion.png"alt="albumCover"><li id="artist"><b>E. Live</b></li><li id="songTitle">Slow Motion</li><audio controls><source src="Mothership.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="PopWhatUGot.png"alt="albumCover"><li id="artist"><b>Lee Funksta & Sven Atterton</b></li><li id="songTitle">Pop What U Got</li><audio controls><source src="PopWhatUGot.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="ItsMyMomma.png"alt="albumCover"><li id="artist"><b>Ezirk</b></li><li id="songTitle">It's My Momma</li><audio controls><source src="ItsMyMomma.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="Fools.png"alt="albumCover"><li id="artist"><b>The Kount & Kaelin Ellis</b></li><li id="songTitle">Fools</li><audio controls><source src="Fools.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="WhosThatGirl.png"alt="albumCover"><li id="artist"><b>UnderMo</b></li><li id="songTitle">Who's That Girl</li><audio controls><source src="WhosThatGirl.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="GottWud.png"alt="albumCover"><li id="artist"><b>Sven Atterton</b></li><li id="songTitle">Gott-Wud</li><audio controls><source src="GottWud.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="Everlasting.png"alt="albumCover"><li id="artist"><b>Lemy Leopard</b></li><li id="songTitle">Everlasting</li><audio controls><source src="Everlasting.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="PoppingHomosapiens.png"alt="albumCover"><li id="artist"><b>DJ Prof & Cy</b></li><li id="songTitle">Da Popping Homosapiens</li><audio controls><source src="PoppingHomosapiens.mp3"></audio>
+       <li></li>
+     </div>
+   <button class="subgenre">Electronic Funk/Soul</button>
+    <div class="content">
+       <img id="albumCover"src="BMXRideOn.png"alt="albumCover"><li id="artist"><b>Funkmaster Ozone</b></li><li id="songTitle">BMX Ride On</li><audio controls><source src="BMXRideOn.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="BodyTalk.png"alt="albumCover"><li id="artist"><b>The Deele</b></li><li id="songTitle">Body Talk</li><audio controls><source src="BodyTalk.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="TheSmurf.png"alt="albumCover"><li id="artist"><b>Tyrone Brunson</b></li><li id="songTitle">The Smurf</li><audio controls><source src="TheSmurf.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="PleasureForYourTreasure.png"alt="albumCover"><li id="artist"><b>First Touch</b></li><li id="songTitle">Pleasure For Your Treasure</li><audio controls><source src="PleasureForYourTreasure.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="ShotOut.png"alt="albumCover"><li id="artist"><b>The Puncher</b></li><li id="songTitle">Shot Out</li><audio controls><source src="ShotOut.mp3"></audio>
+      <li></li>
+      <img id="albumCover"src="ISurrender.png"alt="albumCover"><li id="artist"><b>The Deele</b></li><li id="songTitle">I Surrender</li><audio controls><source src="ISurrender.mp3"></audio>
+      <li></li>
+      <img id="albumCover"src="WeekendFestivity.png"alt="albumCover"><li id="artist"><b>Mangrymade</b></li><li id="songTitle">Weekend Festivity</li><audio controls><source src="WeekendFestivity.mp3"></audio>
+      <li></li>
+      <img id="albumCover"src="WhyYouWannaTreatMeLikeThat.png"alt="albumCover"><li id="artist"><b>Netwerk</b></li><li id="songTitle">Why You Wanna Treat Me Like That</li><audio controls><source src="WhyYouWannaTreatMeLikeThat.mp3"></audio>
+      <li></li>
+      <img id="albumCover"src="SendingAllMyLoveOut.png"alt="albumCover"><li id="artist"><b>Emerson</b></li><li id="songTitle">Sending All My Love Out</li><audio controls><source src="SendingAllMyLoveOut.mp3"></audio>
+      <li></li>
+      <img id="albumCover"src="Rainforest.png"alt="albumCover"><li id="artist"><b>Paul Hardcastle</b></li><li id="songTitle">Rainforest</li><audio controls><source src="Rainforest.mp3"></audio>
+      <li></li>
+    </div>
+  <h1 id="genre">Hip Hop</h1>
+
+    <button class="subgenre">Hip Hop</button>
+     <div class="content">
+       <img id="albumCover"src="DoggPoundGangsta.png"><li id="artist"><b>Daz Dillinger</b></li><li id="songTitle">Tha Dogg Pound Gangsta</li><audio controls><source src="DoggPoundGangsta.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="LoveMeUp.png"><li id="artist"><b>Diamond Ortiz</b></li><li id="songTitle">Tha Dogg Pound Gangsta</li><audio controls><source scr="DoggPoundGangsta.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="PackJam.png"><li id="artist"><b>The Jonzun Crew</b></li><li id="songTitle">Pack Jam</li><audio controls><source src="PackJam.mp3"></audio>
+       <li></li>
+     </div>
+
+    
+  </body>
   <script>
   </script>
 </html>
