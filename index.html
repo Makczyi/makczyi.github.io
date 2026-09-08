@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Dance4Ever</title>
     <style>
+      .modal-overlay {
+          display:none;
+          position:fixed;
+          left:0;
+          top:0;
+          width:100%;
+          height:100%;
+          background(rgba(0,0,0,0.5);
+      }
+      .modal-overlay.show {
+          display:block;
+      }
+      .modal-box {
+          background:white;
+          width:90%;
+          max-width:400px;
+          margin:100px auto;
+          padding:20px;
+          border-radius:10px;
+          position:relative;
+      }
+      .modal-close {
+          position:absolute;
+          right:12px;
+          top:8px;
+          font-size:24px;
+          border:none;
+          background:none;
+          cursor:pointer;
+      }
       body, html {
         background: repeating-radial-gradient(ellipse, #89f336 97%, #ff13f0 100%);
         background-size: cover;
         height: 100%;
       }
-
-      #alertbutton {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 150px;
-        length: 280px;
-        height: 75px;
-        background-color: rgb(137, 243, 54);
-        color: rgb(255, 19, 240);
-        font-weight: 70%;
-        font-size: 20px;
-      }
-
       h1 {
         font-size: 7vw;
         background-color: rgb(159, 43, 104);
@@ -77,11 +93,42 @@
     
 
 
-    <button type="button" id="alertbutton" onclick="alert('Hello world!')">Click here for a surprise!</button>
+    <button id="openButton">Click here for a surprise!</button>
+
+    <div id="modal"class="modal-overlay">
+        <div class="modal-box">
+            <button id="closeButton"class="modal-close">x</button>
+            <h3>Hello, world!</h3>
+        </div>
+    </div>
 
     <p1>Design by FlwalessRat</p1>
 
     <script>
+        const modal = document.getElementById("modal");
+        const openButton = document.getElementById("openButton");
+        const closeButton = document.getElementById("closeButton");
+
+        function openModal() {
+            modal.classList.add("show")
+        }
+        function closeModal() {
+            modal.classList.remove("show");
+        }
+        openButton.addEventListener("click", openModal);
+        closeButton.addEventListener("click", closeModal);
+
+        modal.addEventListener("click", function(event) {
+            if (even.target === modal) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
     </script>
   </body>
     </style>
