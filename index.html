@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Dance4Ever</title>
-
     <style>
+    .modal-box {
+        background:white;
+        width:90%;
+        max-width:400px;
+        margin:100px auto;
+        padding:20px;
+        border-radius:10px;
+        position:relative;
+    }
+    .modal-close {
+        position:absolute;
+        right:12px;
+        top:8px;
+        font-size:24px;
+        border:none;
+        background:none;
+        cursor:pointer;
+    }
       body, html {
         background: repeating-radial-gradient(ellipse, #89f336 97%, #ff13f0 100%);
         background-size: cover;
@@ -51,6 +68,13 @@
       </style>
   </head>
   <body>
+      <button id="openBtn">Click here!</button>
+
+      <div id="modal" class="modal-overlay">
+          <div class="modal-box">
+              <button id="closeBtn" class="modal-close">x</button>
+
+              <h3>Hello World</h3>
 
     <h1>Summer</br>Dance</br>Forever '26</h1>
     <h3>Choose your Forever:</h3>
@@ -63,43 +87,38 @@
     <button id="button" onclick="document.location='Vinyl.html'">Vinyl</button>
     
 
-
-    <button id="openButton">Click here for a surprise!</button>
-
-    <div id="modal"class="modal-overlay">
-        <div class="modal-box">
-            <button id="closeButton"class="modal-close">x</button>
-            <h3>Hello, world!</h3>
-        </div>
-    </div>
-
     <p1>Design by FlwalessRat</p1>
 
     <script>
         const modal = document.getElementById("modal");
-        const openButton = document.getElementById("openButton");
-        const closeButton = document.getElementById("closeButton");
+const openBtn = document.getElementById("openBtn");
+const closeBtn = document.getElementById("closeBtn");
 
-        function openModal() {
-            modal.classList.add("show")
-        }
-        function closeModal() {
-            modal.classList.remove("show");
-        }
-        openButton.addEventListener("click", openModal);
-        closeButton.addEventListener("click", closeModal);
+function openModal() {
+  modal.classList.add("show");
+}
 
-        modal.addEventListener("click", function(event) {
-            if (even.target === modal) {
-                closeModal();
-            }
-        });
+function closeModal() {
+  modal.classList.remove("show");
+}
 
-        document.addEventListener("keydown", function(event) {
-            if (event.key === "Escape") {
-                closeModal();
-            }
-        });
+openBtn.addEventListener("click", openModal);
+closeBtn.addEventListener("click", closeModal);
+
+
+modal.addEventListener("click", function (event) {
+  if (event.target === modal) {
+    closeModal();
+  }
+});
+
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
+    
     </script>
   </body>
     </style>
