@@ -4,10 +4,99 @@
      <img src="DJBarry.png"alt="DJBarry"id="Barry"style=float:right;width:250px;top:5px;position:sticky;>
   </body>
   <style>
+    .collapsible {
+      background-color:maroon;
+      color:navy;
+      cursor:pointer;
+      padding:18px;
+      width:400px;
+      border:none;
+      text-align:none;
+      outline:none;
+      font-size:15px;
+      top:200px;
+    }
+    .active, collapsible.hover {
+      background-color:navy;
+    }
+    .content {
+      padding:0 18px;
+      max-height:0;
+      width:350px;
+      overflow:hidden;
+      transition:max-height 0.2s ease-out;
+      background-color:rgb(112, 41, 99);
+    }
     body, html {
       background:repeating-radial-gradient(ellipse, #978081 97%, #297965 100%);
       background-size:cover;
       height:100%;
     }
+    #genre {
+      background-color:darkblue;
+      color:white;
+      font-size:50px;
+      font-weight:85%;
+      width:350px;
+      top:180px;
+    }
+    .subgenre {
+      background-color:rgb(112, 41, 99);
+      color:white;
+      font-size:30px;
+      font-weight:85%;
+      height:100px;
+      width:400px;
+    }
+    #artist {
+      color:white;
+      font-size:40px;
+      font-weight:60%;
+      width:350px;
+    }
+    #songTitle {
+      color:white;
+      font-size:30px;
+      font-weight:50%;
+      margin-bottom:5px;
+      width:350px;
+    }
   </style>
+</head>
+  <body>
+    <h1 id="genre">Hip Hop</h1>
+
+    <button class="subgenre">Hip Hop</button>
+     <div class="content">
+       <img id="albumCover"src="Delivery.png"alt="albumCover"><li id="artist"><b>ASAPJU</b></li><li id="songTitle">Deliver</li><audio controls><source src="Delivery.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="DoItAgain.png"alt="albumCover"><li id="artist"><b>Jay-Z</b></li><li id="songTitle">Do It Again</li><audio controls><source src="DoItAgain.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="HussleInTheHouse.png"alt="albumCover"><li id="artist"><b>Nipsey Hussle</b></li><li id="songTitle">Hussle In The House</li><audio controls><source src="HussleInTheHouse.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="DontRun.png"alt="albumCover"><li id="artist"><b>Casanova</b></li><li id="songTitle">Don't Run</li><audio controls><source src="DontRun.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="War.png"alt="albumCover"><li id="artist"><b>Memphis Bleek</b></li><li id="songTitle">War</li><audio controls><source src="War.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="SupaFlee.png"alt="albumCover"><li id="artist"><b>Joey Bada$$ & Bri Steves</b></li><li id="songTitle">SupaFlee></li><audio controls><source src="SupaFlee.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="TalkYaShit.png"alt="albumCover"><li id="artist"><b>Busta Rhymes</b></li><li id="songTitle">Talk Ya Shit</li><audio controls><source src="TalkYaShit.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="PartyAintOver.png"alt="albumCover"><li id="artist"><b>G-Unit</b></li><li id="songTitle">Party Ain't Over</li><audio controls><source src="PartyAintOver.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="WhatUpBae.png"alt="albumCover"><li id="artist"><b>K-Natural & Slum Village</b></li><li id="songTitle">What Up Bae</li><audio controls><source src="WhatUpBae.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="JobInterviews.png"alt="albumCover"><li id="artist"><b>Tuamie</b></li><li id="songTitle">Job Interviews</li><audio controls><source src="JobInterviews.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="Stunt101.png"alt="albumCover"><li id="artist"><b>G-Unit</b></li><li id="songTitle">Stunt 101</li><audio controls><source src="Stunt101.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="GetUp.png"alt="albumCover"><li id="artist"><b>Cocoa Brovaz</b></li><li id="songTitle">Get Up</li><audio controls><source src="GetUp.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="Drive.png"alt="albumCover"><li id="artist"><b>DJ Spinna</b></li><li id="songTitle">Drive (feat.Shadowman)</li><audio controls><source src="Drive.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="SoHot.png"alt="albumCover"><li id="artist"><b>Jigg</b></li><li id="songTitle"></li><audio controls><source src="SoHot.mp3"></audio>
+       <li></li>
+       <img id="albumCover"src="Flipside.png"alt="albumCover"><li id="artist"><b>Freeway</b></li>
+        
+  </body>
 </html>
