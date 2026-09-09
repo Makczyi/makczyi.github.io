@@ -1,21 +1,25 @@
 <!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Locking Forever</title>
 <body>
-  <img src="DJMason.png" alt="MasonDJ" class="Mason" style=float:right;width:400px;top:0;position:sticky;>
+  <img src="DJMason.png" alt="MasonDJ" class="Mason" style=float:right;width:400px;top:5px;position:sticky;>
 </body>
 <style>
+  * {
+    margin:0;
+    padding:0;
+  }
   .collapsible {
     background-color:maroon;
     color:navy;
     cursor:pointer;
     padding:18px;
-    width:350px;
+    width:400px;
     border:none;
     text-align:none;
     outline:none;
     font-size:15px;
     top:200px;
   }
-  .active, .collapsible:hover {
+  .active, .collapsible-hover {
     background-color:navy;
   }
   .content {
@@ -30,7 +34,6 @@
     background:repeating-radial-gradient(ellipse, #330413 97%, #FF0000 100%);
     background-size:cover;
     background-repeat: repeat;
-    position: fixed;
   }
   #genre {
     background-color:darkblue;
@@ -45,8 +48,8 @@
     color:white;
     font-size:30px;
     font-weight:85%;
-    height:50px;
-    width:350px;
+    height:100px;
+    width:400px;
   }
   #albumCover {
     width:250px;
