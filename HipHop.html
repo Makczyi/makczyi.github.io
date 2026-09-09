@@ -4,6 +4,10 @@
      <img src="DJBarry.png"alt="DJBarry"id="Barry"style=float:right;width:250px;top:5px;position:sticky;>
   </body>
   <style>
+    * {
+      margin:0;
+      padding:0;
+    }
     .collapsible {
       background-color:maroon;
       color:navy;
@@ -16,7 +20,7 @@
       font-size:15px;
       top:200px;
     }
-    .active, collapsible.hover {
+    .active, collapsible:hover {
       background-color:navy;
     }
     .content {
@@ -30,7 +34,7 @@
     body, html {
       background:repeating-radial-gradient(ellipse, #978081 97%, #297965 100%);
       background-size:cover;
-      height:100%;
+      background-repeat: repeat
     }
     #genre {
       background-color:darkblue;
