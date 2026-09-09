@@ -126,5 +126,21 @@
        <img id="albumCover"src="LeaveUsAlone.png"alt="albumCover"><li id="artist"><b>So Solid Crew</b></li><li id="songTitle"><b>Leave Us Alone</b></li><audio controls><source src="LeaveUsAlone.mp3"></audio>
        <li></li>
      </div>
+  <script>
+    var coll = document.getElementsByClassName("subgenre");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
   </body>
 </html>
