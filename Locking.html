@@ -9,7 +9,8 @@
     background:repeating-radial-gradient(ellipse, #330413 97%, #FF0000 100%);
     background-size:cover;
     background-repeat: repeat;
-    height:100%;
+    height:auto;
+    max-width:100%;
   }
   * {
     margin:0;
@@ -27,7 +28,7 @@
     border:none;
     text-align:none;
     outline:none;
-    font-size:15px;
+    font-size:5vw;
     top:200px;
   }
   .active, .collapsible:hover {
@@ -41,10 +42,10 @@
     transition:max-height 0.2s ease-out;
     background-color:rgb(112, 41, 99);
   }
-  #day {
+  .day {
     background-color:darkblue;
     color:white;
-    font-size:50px;
+    font-size:5vw;
     font-weight:85%;
     width:400px;
     top:500px;
@@ -52,7 +53,7 @@
   .subgenre {
     background-color: rgb(112, 41, 99);
     color:white;
-    font-size:30px;
+    font-size:5vw;
     font-weight:85%;
     height:100px;
     width:400px;
@@ -63,13 +64,13 @@
   }
   #artist {
     color:white;
-    font-size:40px;
+    font-size:5vw;
     font-weight:60%;
     width:350px;
   }
    #songTitle {
     color:white;
-    font-size:30px;
+    font-size:5vw;
     font-weight:50%;
     margin-bottom:5px;
     width:350px;
@@ -77,7 +78,7 @@
 </style>
 </head>
   <body>
-    <h1 id="day">Day 1: Locking</h1>
+    <h1 class="day">Day 1: Locking</h1>
     
   <button class="subgenre">Funk/Soul</button>
     <div class="content">
@@ -149,7 +150,7 @@
      </div>
     
 
-    <button style=height:70px; class="subgenre">Electronic/Hip Hop/Funk/Soul</button>
+    <button style=max-height:70px; class="subgenre">Electronic/Hip Hop/Funk/Soul</button>
      <div class="content">
        <img id="albumCover"src="FunkyLover.png"alt="albumCover"><li id="artist"><b>G. Bonson</b><li id="songTitle"><b>Funky Lover</b></li><audio controls><source src="FunkyLover.mp3"></audio>
        <li></li>
