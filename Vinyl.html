@@ -6,15 +6,23 @@
   </body>
     <style>
        body, html {
-            background:repeating-radial-gradient(ellipse, #682503 97%, #FF00FF 100%);
-            background-size:cover;
-            background-repeat:repeat;
-            height:100%
-          }
+        background:repeating-radial-gradient(ellipse, #682503 97%, #FF00FF 100%);
+        background-size:cover;
+        background-repeat:repeat;
+        height:100%
+      }
         * {
           margin:0;
           padding:0;
          }
+      .content {
+        padding:0 18px;
+        max-height:0;
+        width:350px;
+        overflow:hidden;
+        transtition:max-height 0.2s ease-out;
+        background-color:rgb(112,41,99);
+      }
        .content li {
       list-style:none;
      }
