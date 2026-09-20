@@ -11,25 +11,25 @@
         background-repeat:repeat;
         height:100%
       }
-        * {
-          margin:0;
-          padding:0;
-         }
-      .subgenre {
-        padding:0 18px;
+      * {
+        margin:0;
+        padding:0;
+      }
+      .content li {
+        list-style:none;
+      }
+      .active, .subgenre:hover {
+         background-color:maroon;
+      }
+      .content {
+        padding: 0 18px;
         max-height:0;
         width:350px;
         overflow:hidden;
-        transtition:max-height 0.2s ease-out;
+        transition:max-height 0.2s ease-out;
         background-color:rgb(112,41,99);
       }
-       .content li {
-      list-style:none;
-     }
-       .active, subgenre:hover {
-       background-color:maroon;
-      }
-       #genre {
+      #genre {
        background-color:darkblue;
        color:white;
        font-size:50px;
@@ -70,31 +70,41 @@
   <button class='subgenre'>Funk</button>
     <div class='content'>
       <img id='albumCover'src='FelaKuti.png'alt='albumCover'><li id='artist'><b>Fela Kuti</b></li><li id='songTitle'>Teacher, Don't Teach Me Nonsense</li><audio controls><source src='DontTeachMeNonsense.mp3'></audio>
+      <li></li>
       <img id='albumCover'src='IvoryCoastSoul.png'alt='albumCover'><li id='artist'><b>Jimmy Hyacinthe</b></li><li id='songTitle'>Yatchiminou</li><audio controls><source src='Yatchiminou.mp3'></audio>
+      <li></li>
       <img id='albumCover'src='Homowo.png'alt='albumCover'><li id='artist'><b>Basa Basa</b></li><li id='songTitle'>Love, Love, Love</li><audio controls><source src='LoveLoveLove.mp3'></audio>
+      <li></li>
       <img id='albumCover'src='GhanaSoundz.png'alt='albumCover'><li id='artist'><b>Honny & The Bees Band</b></li><li id='songTitle'>Psychedelic Woman</li><audio controls><source src="PsychedelicWoman.mp3"></audio>
+      <li></li>
       <img id='albumCover'src='IvoryCoastTwo.png'alt='albumCover'><li id='artist'><b>Sumo Brothers</b></li><li id='songTitle'>I Love Music</li><audio controls><source src='ILoveMusic.mp3'></audio>
+      <li></li>
       <img id='albumCover'src='TheHealing.png'alt='albumCover'><li id='artist'><b>BCUC</b></li><li id='songTitle'>Isivunguvungu</li><audio controls><source src='Isivunguvungu.mp3'></audio>
+      <li></li>
       <img id='albumCover'src='AfricanFire.png'alt='albumCover'><li id='artist'><b>The Ogyatanaa Show Band</b></li><li id='songTitle'>Mmobrowa</li><audio controls><source src='Mmbrowa.mp3'></audio>
+      <li></li>
       <img id='albumCover'src='NoImage.png'alt='albumCover'><li id='artist'><b>Muyei Power</b></li><li id='songTitle'>Bi Loko</li><audio controls><source src='BiLoko.mp3'></audio>
+      <li></li>
       <img id='albumCover'src='Malik.png'alt='albumCover'><li id='artist'><b>Lafayette Afro Rock Band</b></li><li id='songTitle'>Avi-Vo</li><audio controls><source src='AviVo.mp3'></audio>
+      <li></li>
       <img id='albumCover'src='EvansPyramid.png'alt='albumCover'><li id='artist'><b>Evans Pyramid</b></li><li id='songTitle'>Sugar</li><audio controls><source src='Sugar.mp3'></audio>
-   </div>
+      <li></li>
+    </div>
   <script>
-    var coll = document.getElementsByClassName("subgenre");
+    var coll = document.getElementsByClassName('subgenre');
     var i;
 
     for (i = 0; i < coll.length; i++) {
       coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
         } else {
-          content.style.display = "block";
+          content.style.maxHeight = content.scrollHeight + "px";
         }
       });
-    }
+    } 
    </script>
  </body>
 </html>
