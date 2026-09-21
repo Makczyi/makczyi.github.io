@@ -1,5 +1,17 @@
-<!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>One Decade</title>
+<!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>One Decade</title><link rel="icon"type="image/x-icon"href="MiniPara.png">
  <style>
+  .content li {
+   list-style:none;
+  }
+  .content {
+   padding:o 18px;
+   max-height:0;
+   width:350px;
+   overflow:hidden;
+   transition:max-height 0.2s ease-out;
+   background-color:yellow;
+   color:black;
+  }
    body, html {
      background-color:black;
    }
@@ -49,10 +61,26 @@
      <li><b>FlwalessRat</b> (Lyricist, guitarist)</li>
     </ul>
    </div>
-   <div style="background-color:yellow;color:black;bottom:0px;float:right;width:400px;"class="uncultured">
-    <h1 class="text">Am I uncultured?</h1>
-    <h3 class="text">How I felt explaining what I wanted for this song to the professional musicians:</h3>
-    <img id='lily'src='LDN.png'alt='lily'><li id='artist'><b>Lily Allen</b></li><li id="songTitle">LDN in that record shop</li><audio controls><source src='LDN.mp3'></audio>
-   </div>
+   <h1 class="lily">Am I uncultured?</h1>
+   <button class="uncultured">How I felt explaining to professional musicians what I wanted for this song:</button>
+    <div class="content">
+     <img id="albumCover"src="LDN.png"><li id="artist"><b>Lily Allen</b></li><li id="songTitle">LDN in that record shop</li><audio controls><source src="LDN.mp3"></audio>
+    </div>
   </body>
+ <script>
+  var coll = document.getElementsByClassName("uncultured");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+   coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+     content.style.maxHeight = null;
+    } else {
+     content.style.maxHeight = content.scrollHeight + "px";
+    }
+   });
+  }
+ </script>
 </html>
