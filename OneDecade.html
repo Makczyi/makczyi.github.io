@@ -44,10 +44,9 @@
   .text {
    color:black;
   }
-  #albumCover {
+  #albumCover, .rat {
    max-width:250px;
    max-height:auto;
-   align:center;
   }
   .uncultured {
    font-size:20px;
@@ -57,6 +56,9 @@
   audio::-webkit-media-controls-panel {
   background-color:yellow;
 }
+ .rat {
+  border:solid yellow 5px;
+ }
  </style>
   <body>
     <img source src="UFO.jpg"alt="UFO"style=float:right;max-width:400px;top:0px;>
@@ -81,6 +83,9 @@
     <div class="content">
      <img id="albumCover"src="LDN.png"><li id="artist"><b>Lily Allen</b></li><li id="songTitle">LDN in that record shop</li><audio controls><source src="LDN.mp3"></audio>
     </div>
+  <div class="rat">
+    <img id="clankyFuck"src="Clankerfuckers.png"><li id="artist"><b>Flwaless Rat and The Clankerfuckers</b></li><li id="songTitle">One More Decade</li>
+  </div>
   </body>
  <script>
   var coll = document.getElementsByClassName("uncultured");
