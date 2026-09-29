@@ -1,43 +1,64 @@
-<!DOCTYPE html>
-<html>
-<meta name ="viewport" content="width=device-width, initial-scale=1.0">
-<head>
-  <title></title>
+<!DOCTYPE html><html><head lang="en"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="icon"type="image/x-icon"href="MiniPara.png">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Dance Forever</title>
   <style>
-    .gfg {
-      font-size:7vw;
-      font-weight:bold;
-      color:green;
-      text-align:center;
-    }
-    .geeks {
-      font-size:5vw;
-      text-align:center;
-    }
-    p {
-      font-size:3vw;
-      text-align:justify;
-    }
+    * {margin:0;padding:0;}
+    body, html {background:repeating-radial-gradient(ellipse, #89f336 97%, #ff13f0 100%);background-size:cover;background-repeat:repeat;height:100%;}
+    h1 {font-size:7vw;background-color:rgb(159,43,104);display:inline;color:rgb(255,19,240);max-width:30%;height:auto;font-weight:bold;}
+    h3 {font-size:4vw;background-color:rgb(255,19,240);display:inline;color:rgb(137,243,54)max-width:30%;height:auto;}
+    p1 {position:fixed;max-width:30%;bottom:0px;left:0px;font-size:2vw;background-color:rgb(159,43,104);}
+    #btnhypr {position:relative;background-color:rgb(137,243,54);color:rgb(255,19,240);bottom:100px;max-width:20%;font-size:3vw;margin:50px;}
+    #modalButton {position:absolute;top:5px;right:5px;color:Red;}
+    .modal-body, .modal-header, .modal-footer {background-color:SlateBlue;color:Red;text-align:center;}
+    .oneDecade {position:fixed;max-width:15%;height:20%;bottom:0px;right:0px;background-color:darkblue;color:red;}
   </style>
 </head>
-<body>
-  <img class ="mason" src="DJMason.png" style="max-width:50%; height:auto;">
-  
-  <div class="gfg">Textfortext</div>
-  <div class="geeks">Text introduction</div>
+  <body>
 
-  <p>
-    This is a text and I guess it needs to be a little long because I want
-    to check out how it acts on different screen sizes and I'm getting so 
-    sick and tired of trying to figure it out, but we almost finished the
-    song by now, and that was the last element I was looking to add, so that
-    means that the rest of the website needs to be finished as well, because
-    that way I just have a finished product to show and that would be so nice
-    also why have I not heard anything from that course yet? I'm so confused
-    on the starting date, I really don't understand what's happening, help I
-    just want to know how to make a game please please please just let me do
-    this and I'm kinda scared I won't understand it at all so I'm just stressing
-    I just wanna get started ya know.
-  </p>
-</body>
+    <div class="container mt-3">
+      <button type="button" id="modalButton" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Click here for a surprise!
+      </button>
+    </div>
+
+
+     <div class="modal" id="myModal">
+     <div class="modal-dialog modal-sm">
+     <div class="modal-content">
+
+      
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      
+      <div class="modal-body">  🍌 Hello, world! 🍲  </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+   </div>
+  </div>
+
+  <h1>Summer</br>Dance</br>Forever '26</h1>
+  <h3>Choose your Forever:</h3>
+    
+  <div class="btnhypr">
+    <button onclick="document.location='Locking.html'">Locking</button>
+    <button onclick="document.location='Waacking.html'">Waacking</button>
+    <button onclick="document.location='Popping.html'">Popping</button>
+    <button onclick="document.location='House.html'">House</button>
+    <button onclick="document.location='HipHop.html'">Hip Hop</button>
+   </div>
+
+   <div class="bonus">
+     <button onclick="document.location='OneDecade.html'">Exclusive song:</br>One More Decade</button>
+   </div>
+
+    <p1>Design by FlwalessRat</p1>
+  
+  </body> 
 </html>
