@@ -1,34 +1,58 @@
-<!DOCTYPE html>
-<html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Dance4Ever</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="icon"type="image/x-icon"href="MiniPara.png">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<!DOCTYPE html><html><head lang="en"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="icon"type="image/x-icon"href="MiniPara.png">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Dance Forever</title>
+  <style>
+    body, html {background:repeating-radial-gradient(ellipse, #89f336 97%, #ff13f0 100%);background-size:cover;background-repeat:repeat;height:100%;overflow:hidden;}
+    h1 {font-size:4vw;background-color:rgb(159,43,104);color:rgb(255,19,240);display:inline;max-width:30%;height:auto;font-weight:bold;margin-top:0px;margin-left:6px;}
+    h3 {font-size:2vw;background-color:rgb(255,19,240);color:rgb(137,243,54);max-width:20%;height:auto;margin-left:6px;}
+    p1 {position:absolute;max-width:40%;bottom:0px;left:5px;font-size:2vw;background-color:rgb(159,43,104);}
+    #btnhypr {display:inline;position:relative;background-color:rgb(137,243,54);color:rgb(255,19,240);bottom:10px;border:solid 5px;max-width:25%;font-size:3vw;margin:30px;}
+    #modalButton {position:absolute;top:0px;right:0px;color:Red;}
+    .modal-body, .modal-header, .modal-footer {background-color:SlateBlue;color:Red;text-align:center;}
+    #bonus {position:absolute;max-width:20%;min-height:10%;bottom:0px;right:0px;background-color:darkblue;color:red;}
+
+    @media screen and (max-width:567px) {
+      #btnhypr {
+        width:50%;
+        height:10%;
+        font-size:20px;
+        margin:50px;
+      }
+      h1 {
+        font-size:35px;
+        left:0px;
+      }
+      h3 {
+        font-size:20px;
+        max-width:45%;
+        left:0px;
+      }
+      p1 {
+        font-size:20px;
+        max-width:30%;
+        left:0px;
+      }
+      #modalButton {
+        max-width:20%;
+      }
+      #bonus {
+        max-width:30%;
+    }
+  </style>
 </head>
-    <style>
-        * { margin:0;padding:0;}
-      body, html {background: repeating-radial-gradient(ellipse, #89f336 97%, #ff13f0 100%);background-size:auto;height:100%}
-      h1 {font-size: 7vw;background-color: rgb(159, 43, 104);display: inline;color: rgb(255, 19, 240);width: 350px;height: 85px;length: 50px;}
-      h3 {font-size: 4vw;background-color: rgb(255, 19, 240);color: rgb(137, 243, 54);max-width: 50%;max-height: 50%;margin-bottom: 85px;font-weight: 85%;}
-      p1 {position:fixed;max-width:400px;max-height:5%;bottom:0px;left:0px;font-size:20px;background-color: rgb(159, 43, 104);}
-      #btnhypr {position:relative;background-color:rgb(137, 243, 54);color:rgb(255, 19, 240);bottom:100px;width:100px;height:65px;font-size:20px;font-weight:10px;margin:50px;}
-      #modalButton {position:absolute;top:5px;right:5px;color:Red;}
-      .modal-body, .modal-header, .modal-footer{background-color:SlateBlue;color:Red;text-align:center;}
-      .OneDecade{position:fixed;width:100px;height:100px;bottom:0px;right:0px;background-color:darkblue;color:red;}
-      </style>
   <body>
 
-      <div class="container mt-3">
-         
-  
-  
-  <button type="button" id="modalButton" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-    Click here for a surprise!
-  </button>
-</div>
+    <div class="container mt-3">
+      <button type="button" id="modalButton" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Click here for a surprise!
+      </button>
+    </div>
 
 
-<div class="modal" id="myModal">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
+     <div class="modal" id="myModal">
+     <div class="modal-dialog modal-sm">
+     <div class="modal-content">
 
       
       <div class="modal-header">
@@ -43,15 +67,13 @@
       </div>
 
     </div>
+   </div>
   </div>
-</div>
 
+  <h1>Summer</br> Dance</br> Forever '26</h1>
+  <h3>Choose your Forever:</h3>
+    
   
-
-    <h1>Summer</br>Dance</br>Forever '26</h1>
-    <h3>Choose your Forever:</h3>
-
-
     <button id="btnhypr" onclick="document.location='Locking.html'">Locking</button>
     <button id="btnhypr" onclick="document.location='Waacking.html'">Waacking</button>
     <button id="btnhypr" onclick="document.location='Popping.html'">Popping</button>
@@ -59,12 +81,13 @@
     <button id="btnhypr" onclick="document.location='HipHop.html'">Hip Hop</button>
     <button id="btnhypr" onclick="document.location='Vinyl.html'">Vinyl</button>
     <button id="btnhypr" onclick="document.location='indexmobiletest.html'">Mobile Test</button>
+   
 
-    <div class="bonus">
-      <button class="OneDecade" onclick="document.location='OneDecade.html'">Exclusive song: <br>A Decade If We're Lucky</button>
-    </div>
-      
+  
+    <button id="bonus" onclick="document.location='OneDecade.html'">Exclusive song:</br>One More Decade</button>
+  
+
     <p1>Design by FlwalessRat</p1>
-
-  </body>
+  
+  </body> 
 </html>
