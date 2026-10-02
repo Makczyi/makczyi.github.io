@@ -13,6 +13,7 @@
     background-size:cover;
     background-repeat: repeat;
     height:100%;
+    overflow:hidden;
   }
     * {
       margin:0;
@@ -66,10 +67,27 @@
   audio::-webkit-media-controls-panel {
   background-color:rgb(112, 41, 99);
 }
+   @media screen and (max-width:570px) {
+   .day {
+   font-size:6vw;
+   width:40%;
+   height:40%;
+   }
+   #Cooper {
+     max-width:20%;
+     height:50%;
+    }
+    .subgenre {
+    font-size:6vw;
+    width:40%;
+    height:40%;
+    }
+    
+   }
   </style>
 </head>
   <body>
-    <h1 class="genre">Day 2: Waacking</h1>
+    <h1 class="day">Day 2: Waacking</h1>
 
     <button class="subgenre">Electronic/Funk/Soul/Jazz</button>
      <div class="content">
