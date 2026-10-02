@@ -70,21 +70,6 @@
    audio::-webkit-media-controls-panel {
    background-color:rgb(112, 41, 99);
    }
-   .player.active .play{
-		display: none;
-	}
-
-	.player.active .pause{
-		display: block;
-	}
-
-	.player .play{
-		display: block;
-	}
-
-	.player .pause{
-		display: none;
-	}
    @media screen and (max-width:570px) {
       .homepage, .forward {
          max-width:25%;
@@ -114,11 +99,11 @@
          height:10%;
       }
       .content {
-         width:35%;
+         width:40%;
       }
      #albumCover {
-        height:15%;
-        width:15%;
+        height:25%;
+        width:25%;
      }
      #artist {
        font-size:5vw;
@@ -133,7 +118,7 @@
     <h1 class="day">Day 1: Locking</h1>
   <button class="subgenre">Funk/Soul</button>
     <div class="content">
-     <img id="albumCover"src="KayGees.png"alt="albumCover"><li id="artist"><b>The Kay Gees</b></li><li id="songTitle">Kay Gees Theme Song</li><div class="player"><audio src="KayGees.mp3"></audio><i class="fa fa-play play" aria-hidden="true"></i><i class="fa fa-pause pause" aria-hidden="true"></i></div>
+     <img id="albumCover"src="KayGees.png"alt="albumCover"><li id="artist"><b>The Kay Gees</b></li><li id="songTitle">Kay Gees Theme Song</li><div class="player"><audio controls><source src="KayGees.mp3"></audio>
      <img id="albumCover"src="GetUpOrGetOut.png"alt="albumCover"><li id="artist"><b>Bloodstone</b></li><li id="songTitle">Get Up Or Get Out</li><audio controls><source src="GetUpOrGetOut.mp3"></audio>
      <img id="albumCover"src="OHIO.png"alt="albumCover"><li id="artist"><b>Ohio Players</b></li><li id="songTitle">O-H-I-O</li><audio controls><source src="OHIO.mp3"></audio>
      <img id="albumCover"src="CutYouLoose.png"alt="albumCover"><li id="artist"><b>Kylie Auldist</b></li><li id="songTitle"><b>Cut You Loose</b></li><audio controls><source src="CutYouLoose.mp3"></audio>
@@ -199,20 +184,5 @@
           }
         });
       }
-      $( document ).ready(function() {
-
-			jQuery('.player').on('click', function () {
-
-				if(jQuery(this).hasClass('active')) {
-					jQuery(this).find('audio').trigger('pause');
-					jQuery(this).removeClass('active');
-				} else {
-					jQuery(this).find('audio').trigger('play');
-					jQuery(this).addClass('active');
-				}
-			});
-
-});
-
     </script>
 </html>
