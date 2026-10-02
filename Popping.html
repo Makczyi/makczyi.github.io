@@ -1,9 +1,11 @@
 <!DOCTYPE html><html><head lang="en"<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Popping Forever</title><link rel="icon"type="image/x-icon"href="MiniPara.png">
 <body>
- <button id="backward" style=position:fixed;bottom:5px;right:240px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px; onclick="document.location='Waacking.html'"><span>&#8678;</span></br><p><b>Waacking</b></p></button>
- <button id="homepage" style=position:fixed;bottom:5px;right:120px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px; onclick="document.location='index.html'"><b>.... --- -- .</b></button>
- <button id="forward" style=position:fixed;bottom:5px;right:5px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px; onclick="document.location='House.html'"><span>&#8680;</span></br><p><b>House</b></p></button>
-
+ <div class="buttons">
+   <button id="backward" style=position:fixed;bottom:5px;right:240px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px; onclick="document.location='Waacking.html'"><span>&#8678;</span></br><p><b>Waacking</b></p></button>
+   <button id="homepage" style=position:fixed;bottom:5px;right:120px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px; onclick="document.location='index.html'"><b>.... --- -- .</b></button>
+   <button id="forward" style=position:fixed;bottom:5px;right:5px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px; onclick="document.location='House.html'"><span>&#8680;</span></br><p><b>House</b></p></button>
+ </div>
+ 
 <img src="DJNuri.png" alt="DJNuri" id="Nuri" style=right:5px;width:300px;top:5px;height:40%;position:fixed;>
 </body>
   <style>
@@ -88,13 +90,8 @@
    height:5%;
    width:10%;
    }
-   .homepage {
-    bottom:150px;
-    right:0px;
-   }
-   .backward {
-    bottom:300px;
-    right:0px;
+   .buttons {
+    display:block;
    }
   }
   </style>
