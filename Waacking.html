@@ -65,6 +65,7 @@
   }
   audio::-webkit-media-controls-panel {
   background-color:rgb(112, 41, 99);
+  max-width:5%;
 }
    @media screen and (max-width:570px) {
    .day {
@@ -99,7 +100,7 @@
 
     <button class="subgenre">Electronic/Funk/</br>Soul/Jazz</button>
      <div class="content">
-       <img id="albumCover"src="QueenOfTheNight.png"alt="albumCover"><li id="artist"><b>Whitney Houston & C.J.</b></li><li id="songTitle">Queen Of The Night</li><button id="song" onclick="playPause()"><audio src="QueenOfTheNight.mp3"></audio>Play</button>
+       <img id="albumCover"src="QueenOfTheNight.png"alt="albumCover"><li id="artist"><b>Whitney Houston & C.J.</b></li><li id="songTitle">Queen Of The Night</li><audio controls><source src="QueenOfTheNight.mp3"></audio>
        <img id="albumCover"src="MostPreciousLove.png"alt="albumCover"><li id="artist"><b>Barbara Tucker, Df Future</b></li><li id="songTitle">Most Precious Love</li><audio controls><source src="MostPreciousLove.mp3"></audio>
        <img id="albumCover"src="Breathe.png"alt="albumCover"><li id="artist"><b>The Prodigy</b></li><li id="songTitle">Breathe</li><audio controls><source src="Breathe.mp3"></audio>
        <img id="albumCover"src="MastersAtWork.png"alt="albumCover"><li id="artist"><b>Chris Cuevas / Kenny Dope</b></li><li id="songTitle">Masters At Work</li><audio controls><source src="MastersAtWork.mp3"></audio>
@@ -117,7 +118,7 @@
        <img id="albumCover"src="LoveInCMinor.png"alt="albumCover"><li id="artist"><b>Cerrone / Dimitri From Paris(remix)</b></li><li id="songTitle">Love In C Minor</li><audio controls><source src="LoveInCMinor.mp3"></audio>
        <img id="albumCover"src="WhyDontYou.png"alt="albumCover"><li id="artist"><b>Gramophonedzie</b></li><li id="songTitle">Why Don't You</li><audio controls><source src="WhyDontYou.mp3"></audio>
        <img id="albumCover"src="MakeMe.png"alt="albumCover"><li id="artist"><b>Janet Jackson</b></li><li id="songTitle">Make Me</li><audio controls><source src="MakeMe.mp3"></audio>
-     </div>
+    </div>
 <!----This Should be Criminal actually because it is horrendous------>
     <button class="subgenre">Classical</button>
      <div class="content">
@@ -148,11 +149,6 @@
      <div class="content">
        <img id="albumCover"src="DjToenail.png"alt="Toenail"><li id="artist"><b>DJ Toenail</b></li><li id="songTitle">Bacteria Beat</li><audio controls><source src="BacteriaBeat.mp3"></audio>
      </div>
-
-    <button id="Song" onClick="playPause()">
-      <audio src="OnlyU.mp3"></audio>Play</button>
-    
-
   <script>
     var coll = document.getElementsByClassName("subgenre");
     var i;
@@ -167,18 +163,6 @@
           content.style.maxHeight = content.scrollHeight + "px";
         }
       });
-    }
-    var aud = document.getElementById("Song").children[0];
-    var isPlaying = false;
-    aud.pause();
-
-    function playPause() {
-      if (isPlaying) {
-        aud.pause();
-      } else {
-        aud.play();
-      }
-      isPlaying = !isPlaying;
     }
   </script>
 </body>
