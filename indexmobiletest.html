@@ -136,3 +136,19 @@
       <img id="albumCover"src="DanceWitMe.png"alt="albumCover"><li id="artist"><b>Rick James</b></li><li id="songTitle">Dance Wit' Me</li><audio controls style="width:200px;height:50px;"><source src="DanceWitMe.mp3"></audio>
    </div>
 </body>
+<script>
+   var coll = document.getElementsByClassName("subgenre");
+   var i;
+
+   for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+         this.classList.toggle("active");
+         var content = this.nextElementSibling;
+         if (content.style.maxHeight){
+            content.style.maxHeight = null;
+         } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+         }
+      });
+   }
+</script>
