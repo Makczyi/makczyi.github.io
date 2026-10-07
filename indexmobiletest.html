@@ -1,179 +1,96 @@
-<!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Testing Forever</title><link rel="icon"type="image/x-icon"href="MiniPara.png">
-<body>
-   <button id="homepage" style="align:right;position:fixed;bottom:0;height:65px;right:0px;width:100px;font-size:20px;font-weight:10px;background-color:maroon;" onclick="document.location='index.html'"><b>.... --- -- .</b></button>
-   <button id="forward" style="align:right;position:fixed;bottom:70px;height:65px;right:0px;width:100px;font-size:20px;font-weight:10px;background-color:maroon;" onclick="document.location='Waacking.html'"><span><b>&#8680;</b></span></br><p><b>Waacking</b></p></button>
+<!DOCTYPE html><html><head lang="en"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="icon"type="image/x-icon"href="MiniPara.png">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Testing Forever</title>
+  <style>
+    * {margin:0;padding:0;}
+    body, html {background:repeating-radial-gradient(ellipse, #89f336 97%, #ff13f0 100%);background-size:cover;background-repeat:repeat;height:100%;overflow:hidden;}
+    h1 {font-size:4vw;background-color:rgb(159,43,104);color:rgb(255,19,240);max-width:30%;height:auto;font-weight:bold;margin-top:0px;margin-left:6px;}
+    h3 {font-size:2vw;background-color:rgb(255,19,240);color:rgb(137,243,54);max-width:20%;height:auto;margin-left:6px;}
+    p1 {position:absolute;max-width:40%;bottom:0px;left:5px;font-size:2vw;background-color:rgb(159,43,104);}
+    #btnhypr {display:inline;position:relative;background-color:rgb(137,243,54);color:rgb(255,19,240);bottom:10px;border:solid 5px;max-width:25%;font-size:3vw;margin:30px;}
+    #modalButton {position:absolute;top:0px;right:0px;color:Red;}
+    .modal-body, .modal-header, .modal-footer {background-color:SlateBlue;color:Red;text-align:center;}
+    #bonus {position:absolute;max-width:20%;height:10%;bottom:0px;right:0px;background-color:darkblue;color:red;}
 
-   <img src="DJMason.png"alt="MasonDJ" id="Mason"style="right:5px;max-width:200px;min-height:250px;top:5px;position:fixed;">
-</body>
-<style> 
-  * {
-    padding:0;
-    margin:0;
-  }
- body, html {
-   background:repeating-radial-gradient(ellipse, #330413 97%, #FF0000 100%);
-   background-size:cover;
-   background-repeat:repeat;
-   height:100%;
- }
-  .content li {
-    list-style:none;
-  }
-  .active, .subgenre:hover {
-    background-color:maroon;
-  }
-  .content {
-    padding:0 18px;
-    max-height:0;
-    width:350px;
-    overflow:hidden;
-    transition:max-height 0.2s ease-out;
-    background-color:rgb(112,41,99);
-    position:relative;
-  }
-  .day {
-    background-color:darkblue;
-    color:white;
-    font-size:50px;
-    font-weight:25px;
-    width:350px;
-    height:auto;
-    left:0px;
-  }
-  .subgenre {
-    background-color:rgb(112,41,99);
-    color:white;
-    font-size:30px;
-    font-weight:85%;
-    height:100px;
-    width:400px;
-    display:block;
-    position:relative;
-  }
-  #albumCover {
-    width:250px;
-    height:230px;
-  }
-  #artist {
-    color:white;
-    font-size:4vw;
-    width:350px;
-  }
-  #songTitle {
-     color:white;
-     font-size:3vw;
-     width:350px;
-  }
-  audio::-webkit-media-controls-panel {
-     background-color:rgb(112,41,99);
-  }
-  @media screen and (max-width:570px) {
-     .homepage {
-        position:fixed;
-        max-width:25%;
-        bottom:0px;
-        right:0px;
-     }
-     .forward {
-        position:fixed;
-        max-width:25%;
-        bottom:120px;
-        right:0px;
-     }
-     #Mason {
-        max-height:25%;
-        width:35%;
-     }
-     .subgenre {
-        font-size:4vw;
-        width:55%;
+    @media screen and (max-width:567px) {
+      #btnhypr {
+        width:50%;
         height:10%;
-        text-align:center;
-     }
-     .day {
-        font-size:6vw;
-        width:35%;
+        font-size:20px;
+        margin:50px;
+      }
+      h1 {
+        font-size:25px;
+        left:0px;
+      }
+      h3 {
+        font-size:20px;
+        max-width:40%;
+        left:0px;
+      }
+      p1 {
+        font-size:20px;
+        max-width:30%;
+        left:0px;
+      }
+      #modalButton {
+        max-width:20%;
+      }
+      #bonus {
+        max-width:30%;
         height:10%;
-     }
-     .content {
-        width:45%;
-     }
-     #albumCover {
-        height:70%;
-        width:70%;
-     }
-     #artist {
-       font-size:5vw;
-     }
-     #songTitle {
-        font-size:3vw;
-     }
-  }
-</style>
+      }
+    }
+  </style>
 </head>
-<body>
-   <h1 class="day">Day 1: Locking</h1>
-<button class="subgenre">Funk/Soul</button>
-   <div class="content">
-      <img id="albumCover"src="KayGees.png"alt="albumCover"><li id="artist"><b>The Kay Gees</b></li><li id="songTitle">Kay Gees Theme Song</li><audio controls style="width:200px;height:50px;"><source src="KayGees.mp3"></audio>
-      <img id="albumCover"src="GetUpOrGetOut.png"alt="albumCover"><li id="artist"><b>Bloodstone</b></li><li id="songTitle">Get Up Or Get Out</li><audio controls style="width:200px;height:50px;"><source src="GetUpOrGetOut.mp3"></audio>
-      <img id="albumCover"src="OHIO.png"alt="albumCover"><li id="artist"><b>Ohio Players</b></li><li id="songTitle">O-H-I-O</li><audio controls style="width:200px;height:50px;"><source src="OHIO.mp3"></audio>
-      <img id="albumCover"src="CutYouLoose.png"alt="albumCover"><li id="artist"><b>Kylie Auldist</b></li><li id="songTitle">Cut You Loose</li><audio controls style="width:200px;height:50px;"><source src="CutYouLoose.mp3"></audio>
-      <img id="albumCover"src="AintWeFunkinNow.png"alt="albumCover"><li id="artist"><b>The Brothers Johnson</b></li><li id="songTitle">Ain't We Funkin Now</li><audio controls style="width:200px;height:50px;"><source src="AintWeFunkinNow.mp3"></audio>
-      <img id="albumCover"src="SteamTrain.png"alt="albumCover"><li id="artist"><b>Lee Fields</b></li><li id="songTitle">Steam Train</li><audio controls style="width:200px;height:50px;"><source src="SteamTrain.mp3"></audio>
-      <img id="albumCover"src="LetsWorkAWhile.png"alt="albumCover"><li id="artist"><b>Bobby Williams</b></li><li id="songTitle">Let's Work A While</li><audio controls style="width:200px;height:50px;"><source src="LetsWorkAWhile.mp3"></audio>
-      <img id="albumCover"src="TakeMeWithU.png"alt="albumCover"><li id="artist"><b>Sharon Jones &</br>The Dap-Kings</b></li><li id="songTitle">Take Me With U</li><audio controls stle="width:200px;height:50px;"><source src="TakeMeWithU.mp3"></audio>
-      <img id="albumCover"src="TrippingOnTheSound.png"alt="albumCover"><li id="artist"><b>Jeannie Tracy</b></li><li id="songTitle">Trippin On The Sound</li><audio controls style="width:200px;height:50px;"><source src="TrippingOnTheSound.mp3"></audio>
-      <img id="albumCover"src="GetAway.png"alt="albumCover"><li id="artist"><b>Pure Funk</b></li><li id="songTitle">Get Away</li><audio controls style="width:200px;height:50px;"><source src="GetAway.mp3"></audio>
-      <img id="albumCover"src="AMansGonnaDo.png"alt="albumCover"><li id="artist"><b>Jamal Thomas Band</b></li><li id="songTitle">A Man's Gonna Do</li><audio controls style="width:200px;height:50px;"><source src="AMansGonnaDo.mp3"></audio>
-      <img id="albumCover"src="ToTheYard.png"alt="albumCover"><li id="artist"><b>Funkshone Feat.</br>The Easy Access Orchestra</b></li><li id="songTitle">To The Yard (part 1)</li><audio controls style="width:200px;height:50px;"><source src="ToTheYard.mp3"></audio>
-      <img id="albumCover"src="FastMan.png"alt="albumCover"><li id="artist"><b>The PC's Ltd</b></li><li id="songTitle">Fast Man</li><audio controls style="width:200px;height:50px;"><source src="FastMan.mp3"></audio>
-      <img id="albumCover"src="DanceToOurMusic.png"alt="albumCover"><li id="artist"><b>Erasmus Hall</b></li><li id="songTitle">Dance To Our Music</li><audio controls style="width:200px;height:50px;"><source src="DanceToOurMusic.mp3"></audio>
-      <img id="albumCover"src="Scorcher.png"alt="albumCover"><li id="artist"><b>Carl Grubbs</b></li><li id="songTitle">Scorcher</li><audio controls style="width:200px;height:50px;"><source src="Scorcher.mp3"></audio>
-      <img id="albumCover"src="LoveGun.png"alt="albumCover"><li id="artist"><b>Rick James</b></li><li id="songTitle">Love Gun</li><audio controls style="width:200px;height:50px;"><source src="LoveGun.mp3"></audio>
-      <img id="albumCover"src="SoMuchTrouble.png"alt="albumCover"><li id="artist"><b>Sir Joe Quarterman</b></li><li id="songTitle">So Much Trouble In My Mind</li><audio controls style="width:200px;height:50px;"><source src="SoMuchTrouble.mp3"></audio>
-      <img id="albumCover"src="ThingsGotToGetBetter.png"alt="albumCover"><li id="artist"><b>Marva Whitney</b></li><li id="songTitle">Things Got To Get Better</li><audio controls style="width:200px;height:50px;"><source src="ThingsGotToGetBetter.mp3"></audio>
-      <img id="albumCover"src="DanceAcrossTheFloor.png"alt="albumCover"><li id="artist"><b>Jimmy "Bo" Home</b></li><li id="songTitle">Dance Across The Floor</li><audio controls style="width:200px;height:50px;"><source src="DanceAcrossTheFloor.mp3"></audio>
-      <img id="albumCover"src="SuperBad.png"alt="albumCover"><li id="artist"><b>James Brown</b></li><li id="songTitle">Super Bad (Parts 1, 2, 3)</li><audio controls style="width:200px;height:50px;"><source src="SuperBad.mp3"></audio>
-      <img id="albumCover"src="DanceWitMe.png"alt="albumCover"><li id="artist"><b>Rick James</b></li><li id="songTitle">Dance Wit' Me</li><audio controls style="width:200px;height:50px;"><source src="DanceWitMe.mp3"></audio>
-   </div>
+  <body>
 
- <button class="subgenre">Jazz/Funk/Soul</button>
-   <div class="content">
-      <img id="albumCover"src="UpTheFunk.png"alt="albumCover"><li id="artist"><b>Doug Johns</b></li><li id="songTitle">Up The Funk</li><audio controls style="width:200px;height:50px;"><source src="UpTheFunk.mp3"></audio>
-      <img id="albumCover"src="SoulMusic.png"alt="albumCover"><li id="artist"><b>Philip Lassiter</b></li><li id="songTitle">Soul Music</li><audio controls style="width:200px;height:50px;"><source src="SoulMusic.mp3"></audio>
-      <img id="albumCover"src="ThePanther.png"alt="albumCover"><li id="artist"><b>Manu Dibango</b></li><li id="songTitle">Panther</li><audio controls style="width:200px;height:50px;"><source src="Panther.mp3"></audio>
-      <img id="albumCover"src="MidnightAfterDark.png"alt="albumCover"><li id="artist"><b>Roy Ayers Ubiquity</b></li><li id="songTitle">Midnight After Dark</li><audio controls style="width:200px;height:50px;"><source src="MidnightAfterDark.mp3"></audio>
-      <img id="albumCover"src="FunkinForTheThrill.png"alt="albumCover"><li id="artist"><b>George Duke</b></li><li id="songTitle">Funkin' For The Thrill</li><audio controls style="width:200px;height:50px;"><source src="FunkinForTheThrill.mp3"></audio>
-      <img id="albumCover"src="SuperStrutPtOne.png"alt="albumCover"><li id="artist"><b>Kashmere Stage Band</b></li><li id="songTitle">Super Strut Part One</li><audio controls style="width:200px;height:50px;"><source src="SuperStrutPtOne.mp3"></audio>
-      <img id="albumCover"src="Journey.png"alt="albumCover"><li id="artist"><b>Secret Night Game</b></li><li id="songTitle">Journey</li><audio controls style="width:200px;height:50px;"><source src="Journey.mp3"></audio>
-      <img id="albumCover"src="SoIGotToGroove.png"alt="albumCover"><li id="artist"><b>Tower Of Power</b></li><li id="songTitle">So I Got To Groove</li><audio controls style="width:200px;height:50px;"><source src="SoIGotToGroove.mp3"></audio>
-      <img id="albumCover"src="Ketosis.png"alt="albumCover"><li id="artist"><b>Cory Wong</b></li><li id="songTitle">Ketosis</li><audio controls style="width:200px;height:50px;"><source src="Ketosis.mp3"></audio>
-   </div>
-<button class="subgenre">Electronic/HipHop/Funk/Soul</button>
-   <div class="content">
-      <img id="albumCover"src="FunkyLover.png"alt="albumCover"><li id="artist"><b>G. Bonson</b></li><li id="songTitle">Funky Lover</li><audio controls style="width:200px;height:50px;"><source src="FunkyLover.mp3"></audio>
-      <img id="albumCover"src="Shine.png"alt="albumCover"><li id="artist"><b>Luther Vandross</b></li><li id="songTitle">Shine</li><audio controls style="width:200px;height:50px;"><source src="Shine.mp3"></audio>
-      <img id="albumCover"src="SunsetDriver.png"alt="albumCover"><li id="artist"><b>Michael Jackson</b></li><li id="songTitle">Sunset Driver</li><audio controls style="width:200px;height:50px;"><source src="SunsetDriver.mp3"></audio>
-   </div>
-<button class="subgenre">HipHop/Latin/Funk/Soul</button>
-   <div class="content">
-      <img id="albumCover"src="ChopChase.png"alt="albumCover"><li id="artist"><b>Grooveline Horns</b></li><li id="songTitle">Chopchase</li><audio controls style="width:200px;height:50px;"><source src="ChopChase.mp3"></audio>
-   </div>
-</body>
-<script>
-   var coll = document.getElementsByClassName("subgenre");
-   var i;
+    <div class="container mt-3">
+      <button type="button" id="modalButton" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Click here for a surprise!
+      </button>
+    </div>
 
-   for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-         this.classList.toggle("active");
-         var content = this.nextElementSibling;
-         if (content.style.maxHeight){
-            content.style.maxHeight = null;
-         } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-         }
-      });
-   }
-</script>
+
+     <div class="modal" id="myModal">
+     <div class="modal-dialog modal-sm">
+     <div class="modal-content">
+
+      
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      
+      <div class="modal-body">  🍌 Hello, world! 🍲  </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+   </div>
+  </div>
+
+  <h1>Summer</br> Dance</br> Forever '26</h1>
+  <h3>Choose your Forever:</h3>
+    
+  
+    <button id="btnhypr" onclick="document.location='Locking.html'">Locking</button>
+    <button id="btnhypr" onclick="document.location='Waacking.html'">Waacking</button>
+    <button id="btnhypr" onclick="document.location='Popping.html'">Popping</button>
+    <button id="btnhypr" onclick="document.location='House.html'">House</button>
+    <button id="btnhypr" onclick="document.location='HipHop.html'">Hip Hop</button>
+    <button id="btnhypr" onclick="document.location='Vinyl.html'">Vinyl</button>
+    <button id="btnhypr" onclick="document.location='indexmobiletest.html'">Mobile Test</button>
+   
+
+  
+    <button id="bonus" onclick="document.location='OneDecade.html'">Exclusive song: One More Decade</button>
+  
+
+    <p1>Design by FlwalessRat</p1>
+  
+  </body> 
+</html>
