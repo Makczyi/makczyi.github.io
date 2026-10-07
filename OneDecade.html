@@ -1,71 +1,78 @@
 <!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>One More Decade</title><link rel="icon"type="image/x-icon"href="MiniPara.png">
  <style>
+  body, html {
+     background-color:black;
+   }
   .content li {
    list-style:none;
+  }
+  .active, .subgenre:hover {
+   background-color:red;
   }
   .content {
    padding:0 18px;
    max-height:0;
-   width:300px;
+   width:360px;
    overflow:hidden;
    transition:max-height 0.2s ease-out;
    background-color:yellow;
    color:black;
-  }
-   body, html {
-     background-color:black;
-   }
-  h1, h3, p {
-   color:#DCD427;
    position:relative;
-   font-weight:80%;
-  }
-
-  h2, h4, .band {
-   color:#DCD427;
-   position:relative;
-   font-weight:80%;
-  }
-  .band {
-    border:solid;
-    border-width:5px;
-    border-color:#DCD427;
-    inline-size:25%;
-    color:#DCD427;
-    padding:5px;
-    width:350px;
-  }
-  .collapsible {
-   font-size:4vw;
-   max-width:50%;
-   height:auto;
-   background-color:yellow;
-  }
-  .text {
-   color:black;
-  }
-  #albumCover {
-   max-width:250px;
-   max-height:auto;
-  }
-  h2 { 
-   font-size:5vw;
-   color:yellow;
-   height:10%;
-   max-width:50%;
   }
   audio::-webkit-media-controls-panel {
   background-color:yellow;
-}
- #clankyFuck {
-  max-width:250px;
-  min-height:auto;
-  bottom:200px;
-  left:600px;
-  position:absolute;
-  border: solid yellow 20px;
- }
+  }
+  audio {
+   height:50px;
+   width:300px;
+   margin-bottom:10px;
+  }
+  .collapsible {
+   background-color:yellow;
+   font-size:5vw;
+   font-weight:bold;
+   height:100px;
+   width:420px;
+   display:block;
+   position:relative;
+  }
+  #albumCover {
+   width:250px;
+   height:230px;
+   margin-top:5px;
+  }
+  #artist {
+   font-size:4vw;
+  }
+  #songTitle {
+   font-size:3vw;
+   margin-bottom:5px;
+  }
+  @media screen and (max-width:570px) {
+   audio {
+    height:30px;
+    width:220px;
+   }
+   .collapsible {
+    width:60%;
+    height:10%;
+    text-align:center;
+   }
+   .content {
+    width:50%;
+   }
+   #albumCover {
+    height:70%;
+    width:70%;
+   }
+   #artist {
+    font-size:5vw;
+   }
+   #songTitle {
+    font-size:3vw;
+   }
  </style>
+</head>
   <body>
     <img source src="UFO.jpg"alt="UFO"style=float:right;max-width:400px;top:0px;>
     
@@ -83,7 +90,7 @@
    <h2>Am I uncultured?</h2>
    <button class="collapsible">How I felt explaining to professional musicians what I wanted for this song:</button>
     <div class="content">
-     <img id="albumCover"src="LDN.png"><li id="artist"><b>Lily Allen</b></li><li id="songTitle">LDN in that record shop</li><audio controls><source src="LDN.mp3"></audio>
+     <img id="albumCover"src="LDN.png"alt="albumCover"><li id="artist"><b>Lily Allen</b></li><li id="songTitle">LDN in that record shop</li><audio controls><source src="LDN.mp3"></audio>
     </div>
   
   </body>
