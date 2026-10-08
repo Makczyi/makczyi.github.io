@@ -1,21 +1,17 @@
-<!DOCTYPE html><html><head lang="en"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script></script>
-  <title>Testing Forever</title>
- <body>
-   <div class="ab-07">
-     <button class="ab-07__btn">Enhance this song with AI</button>
-  </div>
- </body>
-  <style>
-    body, html {
-      background-color:black;
-    }
-.ab-07 {
-  font-family: system-ui,sans-serif;
-  min-height: 100vh;
-  display: flex;
-  align-items: right;
-  justify-content: center;
+<!DOCTYPE html><html><head lang="en"><meta name="viewport"><meta content="device=device-width, initial-scale=1.0">
+  <body>
+    <div class="ab-07">
+    <button class="ab-07__btn">Enhance this song with AI</button>
+   </div>
+</body>
+    <style>
+      .ab-07,
+      .ab-07 *,
+      .ab-07 *::before,
+      .ab-07 *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
 }
 .ab-07__btn {
   display: inline-block;
@@ -30,7 +26,7 @@
   cursor: pointer;
   outline: none;
   letter-spacing: .03em;
-  animation: ab-07-shift 8s ease infinite;
+  animation: ab-07-shift 2s ease infinite;
   will-change: background-position;
   box-shadow: 0 4px 20px rgba(124,58,237,.4);
   transition: filter .2s,box-shadow .2s,transform .15s;
@@ -67,6 +63,6 @@
     background: linear-gradient(90deg,#7c3aed,#06b6d4);
   }
 }
-  </style>
+</style>
 </head>
 </html>
