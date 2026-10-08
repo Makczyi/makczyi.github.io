@@ -28,19 +28,19 @@
       border: 1px solid transparent;
       cursor: pointer;
       transition: border-top-width 0.5s ease,
-                  border-left-width 0.5s ease 0.25s,
-                  border-bottom-width 0.5s ease,
-                  border-right-width 0.5s ease 0.25s,
-                  border-color 1s ease 0.75s;
+        border-left-width 0.5s ease 0.25s,
+        border-bottom-width 0.5s ease,
+        border-right-width 0.5s ease 0.25s,
+        border-color 1s ease 0.75s;
       &.active {
         animation: animatedBackground 0.2s linear infinite;
         border-color: hsla(0, 0%, 100.0000%, 0.80000);
         border-width: 1000px;
         transition: border-top-width 0.5s ease 0.5s,
-                    border-left-width 0.5s ease 0.75s,
-                    border-bottom-width 0.5s ease 0.5s,
-                    border-right-width 0.5s ease 0.75s,
-                    border-color 0.5s ease;
+          border-left-width 0.5s ease 0.75s,
+          border-bottom-width 0.5s ease 0.5s,
+          border-right-width 0.5s ease 0.75s,
+          border-color 0.5s ease;
       }
     }   
   </style>
@@ -60,9 +60,9 @@
         'monochrome' : true
       }).css('background-color', '#fff');
     }
-
+    
     static();
-
+    
     $('body').click(function onOff(){
       $('#dot').toggleClass('active');
     });
