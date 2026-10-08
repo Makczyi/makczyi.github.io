@@ -1,8 +1,8 @@
 <!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="widht=device-width, initial-scale=1.0"><title>House Forever</title><link rel="icon"type="image/x-icon"href="MiniPara.png">
   <body>
-  <button class="backward" style=position:fixed;bottom:5px;right:240px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px; onclick="document.location='Popping.html'"><span>&#8678;</span></br><p><b>Popping</b></p></button>
-  <button class="homepage" style=position:fixed;bottom:5px;right:120px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px; onclick="document.location='index.html'"><b>.... --- -- .</b></button>
-  <button class="forward" style=position:fixed;bottom:5px;right:5px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px; onclick="document.location='HipHop.html'"><span>&#8680;</span></br><p><b>Hip Hop</b></p></button>
+  <button class="backward" style="align:right;position:fixed;bottom:140px;right:0px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px; onclick="document.location='Popping.html'"><span>&#8678;</span></br><p><b>Popping</b></p></button>
+  <button class="homepage" style="align:right;position:fixed;bottom:70px;right:0px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px; onclick="document.location='index.html'"><b>.... --- -- .</b></button>
+  <button class="forward" style="align:right;position:fixed;bottom:0px;right:0px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px; onclick="document.location='HipHop.html'"><span>&#8680;</span></br><p><b>Hip Hop</b></p></button>
 
     <img src="DJGarbo.png"alt="DJGarbo"id="Garbo"style=width:400px;top:5px;right:5px;position:fixed;>
   </body>
@@ -31,7 +31,7 @@
       transition:max-height 0.2s ease-out;
       background-color:rgb(112,41,99);
     }
-    #genre {
+    #day {
       background-color:darkblue;
       color:white;
       font-size:50px;
@@ -67,50 +67,85 @@
     audio::-webkit-media-controls-panel {
     background-color:rgb(112, 41, 99);
    }
+   audio {
+     width:300px;
+     height:50px;
+     margin-bottom:10px;
+   }
+   @media screen and (max-width:570px) {
+     #Garbo {
+       max-width:40%;
+       height:20%;
+     }
+     .subgenre {
+       width:50%;
+       height:10%;
+       font-size:4vw;
+     }
+     #albumCover {
+       height:70%;
+       width:70%;
+       margin-top:5px;
+     }
+     #artist {
+       font-size:5vw;
+     }
+     songTitle {
+       font-size:4vw;
+       margin-bottom:5px;
+     }
+     .content {
+       max-width:50%;
+     }
+     audio {
+       height:30px;
+       width:220px;
+     }
+   }
   </style>
 </head>
   <body>
-    <h1 id="genre">Day 4: House</h1>
+    <h1 id="day">Day 4: House</h1>
 
      <button class="subgenre">House</button>
       <div class="content">
-       <img id="albumCover"src="MadDeep.png"alt="albumCover"><li id="artist"><b>Ralph Session</b></li><li id="songTitle"><b>Mad Deep</b></li><audio controls style="width:200px;height:50px;"><source src="MadDeep.mp3"></audio>
-       <img id="albumCover"src="MaddManRiddim.png"alt="albumCover"><li id="artist"><b>NOFKS</b></li><li id="songTitle"><b>Madd Man Riddim</b></li><audio controls style="width:200px;height:50px;"><source src="MaddManRiddim.mp3"></audio>
-       <img id="albumCover"src="Smoothie.png"alt="albumCover"><li id="artist"><b>Dlala & Funky Qla</b></li><li id="songTitle"><b>Smoothie</b></li><audio controls style="width:200px:height:50px;"><source src="Smoothie.mp3"></audio>
-       <img id="albumCover"src="InHouse.png"alt="albumCover"><li id="artist"><b>Marvin Jupiter</b></li><li id="songTitle"><b>In House</b></li><audio controls style="width:200px;height:50px;"><source src="InHouse.mp3"></audio>
-       <img id="albumCover"src="BackUp.png"alt="albumCover"><li id="artist"><b>Deep House Goo</b></li><li id="songTitle"><b>Back Up</b></li><audio controls style="width:200px;height:50px;"><source src="BackUp.mp3"></audio>
-       <img id="albumCover"src="SlidinThru.png"alt="albumCover"><li id="artist"><b>DJ Qu</b></li><li id="songTitle"><b>Slidin Thru</b></li><audio controls style="width:200px;height:50px;"><source src="SlidinThru.mp3"></audio>
-       <img id="albumCover"src="Smile.png"alt="albumCover"><li id="artist"><b>Kennedy John Charles</b></li><li id="songTitle"><b>Smile (Bruk Mix)</b></li><audio controls style="width:200px;height:50px;"><source src="Smile.mp3"></audio>
-       <img id="albumCover"src="RhythmGotMeWayUp.png"alt="albumCover"><li id="artist"><b>EDB</b></li><li id="songTitle"><b>The Rhythm Got Me Way Up</b></li><audio controls style="width:200px;height:50px;"><source src="RhythmGotMeWayUp.mp3"></audio>
-       <img id="albumCover"src="FlightTime.png"alt="albumCover"><li id="artist"><b>V.B. Kuhl</b></li><li id="songTitle"><b>Flight Time</b></li><audio controls style="width:200px;height:50px;"><source src="FlightTime.mp3"></audio>
+       <img id="albumCover"src="MadDeep.png"alt="albumCover"><li id="artist"><b>Ralph Session</b></li><li id="songTitle"><b>Mad Deep</b></li><audio controls><source src="MadDeep.mp3"></audio>
+       <img id="albumCover"src="MaddManRiddim.png"alt="albumCover"><li id="artist"><b>NOFKS</b></li><li id="songTitle"><b>Madd Man Riddim</b></li><audio controls><source src="MaddManRiddim.mp3"></audio>
+       <img id="albumCover"src="Smoothie.png"alt="albumCover"><li id="artist"><b>Dlala & Funky Qla</b></li><li id="songTitle"><b>Smoothie</b></li><audio controls><source src="Smoothie.mp3"></audio>
+       <img id="albumCover"src="InHouse.png"alt="albumCover"><li id="artist"><b>Marvin Jupiter</b></li><li id="songTitle"><b>In House</b></li><audio controls><source src="InHouse.mp3"></audio>
+       <img id="albumCover"src="BackUp.png"alt="albumCover"><li id="artist"><b>Deep House Goo</b></li><li id="songTitle"><b>Back Up</b></li><audio controls><source src="BackUp.mp3"></audio>
+       <img id="albumCover"src="SlidinThru.png"alt="albumCover"><li id="artist"><b>DJ Qu</b></li><li id="songTitle"><b>Slidin Thru</b></li><audio controls><source src="SlidinThru.mp3"></audio>
+       <img id="albumCover"src="Smile.png"alt="albumCover"><li id="artist"><b>Kennedy John Charles</b></li><li id="songTitle"><b>Smile (Bruk Mix)</b></li><audio controls><source src="Smile.mp3"></audio>
+       <img id="albumCover"src="RhythmGotMeWayUp.png"alt="albumCover"><li id="artist"><b>EDB</b></li><li id="songTitle"><b>The Rhythm Got Me Way Up</b></li><audio controls><source src="RhythmGotMeWayUp.mp3"></audio>
+       <img id="albumCover"src="FlightTime.png"alt="albumCover"><li id="artist"><b>V.B. Kuhl</b></li><li id="songTitle"><b>Flight Time</b></li><audio controls><source src="FlightTime.mp3"></audio>
      </div>
      <button class="subgenre">Electronic</button>
       <div class="content">
-        <img id="albumCover"src="TheDance.png"alt="albumCover"><li id="artist"><b>K-Alex</b></li><li id="songTitle"><b>The Dance</b></li><audio controls style="width:200px;height:50px;"><source src="TheDancer.mp3"></audio>
-        <img id="albumCover"src="Obsidian.png"alt="albumCover"><li id="artist"><b>Orson Wells</b></li><li id="songTitle"><b>Obsidian</b></li><audio controls style="width:200px;height:50px;"><source src="Obsidian.mp3"></audio>
-        <img id="albumCover"src="NeeNee.png"alt="albumCover"><li id="artist"><b>Gershon Jackson</b></li><li id="songTitle"><b>Nee Nee [Mike Dunn Demo Mix]</b></li><audio controls style="width:200px;height:50px;"><source src="NeeNee.mp3"></audio>
-        <img id="albumCover"src="ShineOn.png"alt="albumCover"><li id="artist"><b>DJ T</b></li><li id="songTitle"><b>Shine On (Vinyl Mix)</b></li><audio controls style="width:200px;height:50px;"><source src="ShineOn.mp3"></audio>
-        <img id="albumCover"src="GetHer.png"alt="albumCover"><li id="artist"><b>Rednose Distrikt</b></li><li id="songTitle"><b>Get Her</b></li><audio controls style="width:200px;height:50px;"><source src="GetHer.mp3"></audio>
-        <img id="albumCover"src="ALaNoche.png"alt="albumCover"><li id="artist"><b>Psychogroove</b></li><li id="songTitle"><b>A La Noche</b></li><audio controls style="width:200px;height:50px;"><source src="ALaNoche.mp3"></audio>
-        <img id="albumCover"src="EarthIsThePlace.png"alt="albumCover"><li id="artist"><b>Nathan Haines</b></li><li id="songTitle"><b>Earth Is The Place</b></li><audio controls style="width:200px;height:50px;"><source src="EarthIsThePlace.mp3"></audio>
-        <img id="albumCover"src="LetItRide.png"alt="albumCover"><li id="artist"><b>Jovonn</b></li><li id="songTitle"><b>Let It Ride</b></li><audio controls style="width:200px;height:50px;"><source src="LetItRide.mp3"></audio>
-        <img id="albumCover"src="ElectricJungle.png"alt="albumCover"><li id="artist"><b>Ron Trent</b></li><li id="songTitle"><b>Electric Jungle</b></li><audio controls style="width:200px;height:50px;"><source src="ElectricJungle.mp3"></audio>
-        <img id="albumCover"src="Poseidon.png"alt="albumCover"><li id="artist"><b>Osunlade</b></li><li id="songTitle"><b>Poseidon</b></li><audio controls style="width:200px;height:50px;"><source src="Poseidon.mp3"></audio>
-        <img id="albumCover"src="MixingRoom.png"alt="albumCover"><li id="artist"><b>DJ Qu</b></li><li id="songTitle"><b>Mixing Room</b></li><audio controls style="width:200px;height:50px;"><source src="MixingRoom.mp3"></audio>
-        <img id="albumCover"src="CanYou.png"alt="albumCover"><li id="artist"><b>Dazzle Drums</b></li><li id="songTitle"><b>Can You</b></li><audio controls style="width:200px;height:50px;"><source src="CanYou.mp3"></audio>
-        <img id="albumCover"src="DeepLatnSoul.png"alt="albumCover"><li id="artist"><b>Mike Dunn</b></li><li id="songTitle"><b>Deep Lat'n Soul</b></li><audio controls style="width:200px;height:50px;"><source src="DeepLatnSoul.mp3"></audio>
-        <img id="albumCover"src="ThankYou.png"alt="albumCover"><li id="artist"><b>Bebe Winans</b></li><li id="songTitle"><b>Thank You</b></li><audio controls style="width:100px;height:50px;"><source src="ThankYou.mp3"></audio>
-        <img id="albumCover"src="ObsoleteMusicTechnology.png"alt="albumCover"><li id="artist"><b>Latency</b></li><li id="songTitle"><b>Obsolete Music Technology</b></li><audio controls style="width:100px;height:50px;"><source src="ObsoleteMusicTechnology.mp3"></audio>
-        <img id="albumCover"src="DeepInside.png"alt="albumCover"><li id="artist"><b>Paul Sirrell</b></li><li id="songTitle"><b>Deep Inside</b></li><audio controls style="width:100px;height:50px;"><source src="DeepInside.mp3"></audio>
-        <img id="albumCover"src="DustRunner.png"alt="albumCover"><li id="artist"><b>EDB</b></li><li id="songTitle"><b>Dust Runner</b></li><audio controls style="width:100px;height:50px;"><source src="DustRunner.mp3"></audio>
-        <img id="albumCover"src="DubIsForReal.png"alt="albumCover"><li id="artist"><b>Maddslinky</b></li><li id="songTitle"><b>Dub Is For Real</b></li><audio controls style="width:100px;height:50px;"><source src="DubIsForReal.mp3"></audio>
-        <img id="albumCover"src="FutureRage.png"alt="albumCover"><li id="artist"><b>DKD</b></li><li id="songTitle"><b>Future Rage</b></li><audio controls style="width:100px;height:50px;"><source src="FutureRage.mp3"></audio>
+        <img id="albumCover"src="TheDance.png"alt="albumCover"><li id="artist"><b>K-Alex</b></li><li id="songTitle"><b>The Dance</b></li><audio controls><source src="TheDancer.mp3"></audio>
+        <img id="albumCover"src="Obsidian.png"alt="albumCover"><li id="artist"><b>Orson Wells</b></li><li id="songTitle"><b>Obsidian</b></li><audio controls><source src="Obsidian.mp3"></audio>
+        <img id="albumCover"src="NeeNee.png"alt="albumCover"><li id="artist"><b>Gershon Jackson</b></li><li id="songTitle"><b>Nee Nee [Mike Dunn Demo Mix]</b></li><audio controls><source src="NeeNee.mp3"></audio>
+        <img id="albumCover"src="ShineOn.png"alt="albumCover"><li id="artist"><b>DJ T</b></li><li id="songTitle"><b>Shine On (Vinyl Mix)</b></li><audio controls><source src="ShineOn.mp3"></audio>
+        <img id="albumCover"src="GetHer.png"alt="albumCover"><li id="artist"><b>Rednose Distrikt</b></li><li id="songTitle"><b>Get Her</b></li><audio controls><source src="GetHer.mp3"></audio>
+        <img id="albumCover"src="ALaNoche.png"alt="albumCover"><li id="artist"><b>Psychogroove</b></li><li id="songTitle"><b>A La Noche</b></li><audio controls><source src="ALaNoche.mp3"></audio>
+        <img id="albumCover"src="EarthIsThePlace.png"alt="albumCover"><li id="artist"><b>Nathan Haines</b></li><li id="songTitle"><b>Earth Is The Place</b></li><audio controls><source src="EarthIsThePlace.mp3"></audio>
+        <img id="albumCover"src="LetItRide.png"alt="albumCover"><li id="artist"><b>Jovonn</b></li><li id="songTitle"><b>Let It Ride</b></li><audio controls><source src="LetItRide.mp3"></audio>
+        <img id="albumCover"src="ElectricJungle.png"alt="albumCover"><li id="artist"><b>Ron Trent</b></li><li id="songTitle"><b>Electric Jungle</b></li><audio controls><source src="ElectricJungle.mp3"></audio>
+        <img id="albumCover"src="Poseidon.png"alt="albumCover"><li id="artist"><b>Osunlade</b></li><li id="songTitle"><b>Poseidon</b></li><audio controls><source src="Poseidon.mp3"></audio>
+        <img id="albumCover"src="MixingRoom.png"alt="albumCover"><li id="artist"><b>DJ Qu</b></li><li id="songTitle"><b>Mixing Room</b></li><audio controls><source src="MixingRoom.mp3"></audio>
+        <img id="albumCover"src="CanYou.png"alt="albumCover"><li id="artist"><b>Dazzle Drums</b></li><li id="songTitle"><b>Can You</b></li><audio controls><source src="CanYou.mp3"></audio>
+        <img id="albumCover"src="DeepLatnSoul.png"alt="albumCover"><li id="artist"><b>Mike Dunn</b></li><li id="songTitle"><b>Deep Lat'n Soul</b></li><audio controls><source src="DeepLatnSoul.mp3"></audio>
+        <img id="albumCover"src="ThankYou.png"alt="albumCover"><li id="artist"><b>Bebe Winans</b></li><li id="songTitle"><b>Thank You</b></li><audio controls><source src="ThankYou.mp3"></audio>
+        <img id="albumCover"src="ObsoleteMusicTechnology.png"alt="albumCover"><li id="artist"><b>Latency</b></li><li id="songTitle"><b>Obsolete Music Technology</b></li><audio controls><source src="ObsoleteMusicTechnology.mp3"></audio>
+        <img id="albumCover"src="DeepInside.png"alt="albumCover"><li id="artist"><b>Paul Sirrell</b></li><li id="songTitle"><b>Deep Inside</b></li><audio controls><source src="DeepInside.mp3"></audio>
+        <img id="albumCover"src="DustRunner.png"alt="albumCover"><li id="artist"><b>EDB</b></li><li id="songTitle"><b>Dust Runner</b></li><audio controls><source src="DustRunner.mp3"></audio>
+        <img id="albumCover"src="DubIsForReal.png"alt="albumCover"><li id="artist"><b>Maddslinky</b></li><li id="songTitle"><b>Dub Is For Real</b></li><audio controls><source src="DubIsForReal.mp3"></audio>
+        <img id="albumCover"src="FutureRage.png"alt="albumCover"><li id="artist"><b>DKD</b></li><li id="songTitle"><b>Future Rage</b></li><audio controls><source src="FutureRage.mp3"></audio>
       </div>
-    <h1 id="genre">Am I uncultured?</h1>
+    <h1 id="day">Am I uncultured?</h1>
 
     <button class="subgenre">What most of these songs reminded me of:</button>
      <div class="content">
-       <img id="albumCover"src="GreenAppleRedo.png"alt="albumCover"><li id="artist"><b>Shotgun99</b></li><li id="songTitle"><b>Green Apple Redo</b></li><audio controls style="width:200px;height:50px;"><source src="GreenAppleRedo.mp3"></audio>
+       <img id="albumCover"src="GreenAppleRedo.png"alt="albumCover"><li id="artist"><b>Shotgun99</b></li><li id="songTitle"><b>Green Apple Redo</b></li><audio controls><source src="GreenAppleRedo.mp3"></audio>
      </div>
     <script>
      var coll = document.getElementsByClassName("subgenre");
