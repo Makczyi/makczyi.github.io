@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head lang="en"><meta name="viewport"><meta content="device=device-width, initial-scale=1.0">
+<!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="device=device-width, initial-scale=1.0"><title>One More Decade</title><link rel="icon"type="image/x-icon"href="MiniPara.png">
   <body>
     <div class="ab-07">
     <button class="ab-07__btn" onclick="document.location='Vinyl.html'">AI song enhancer</button>
@@ -64,7 +64,90 @@
 body, html {
   background-color:black;
 }
-
+h1, h2 {
+  font-size:40px;
+  color:yellow;
+}
+h3 {
+  font-size:30px;
+  color:yellow;
+}
+p {
+  font-size:20px;
+  color:yellow;
+}
+.content li {
+  list-style:none;
+}
+.active, .subgenre:hover {
+  background-color:blue;
+}
+.content {
+  padding:0 18px;
+  max-height:0;
+  width:350px;
+  overflow:hidden;
+  transition:max-height 0.2s ease-out;
+  background-color:yellow;
+  color:black;
+  position:relative;
+}
+audio::-webkit-media-controls-panel {
+  background-color:yellow;
+{
+audio {
+  height:50px;
+  width:300px;
+  margin-bottom:10px;
+}
+.collapsible {
+  background-color:yellow;
+  font-size:35px;
+  font-weight:bold;
+  height:150px;
+  width:500px;
+  display:block;
+  position:relative;
+}
+#albumCover {
+  width:250px;
+  height:230px;
+  margin-top:5px;
+}
+#artist {
+  font-size:30px;
+}
+#songTitle {
+  font-size:20px;
+  margin-bottom:5px;
+}
+.container {
+  width:350px;
+  border:yellow 5px bold;
+}
+@media screen and (max-width:570px) {
+  audio {
+    height:30px;
+    width:220px;
+  }
+  .collapsible {
+    width:60%;
+    height:10%;
+  }
+  .content {
+    width:50%;
+  }
+  #albumCover {
+    width:70%;
+    height:70%;
+  }
+  #artist {
+    font-size:5vw;
+  }
+  #songTitle {
+    font-size:3vw;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .ab-07__btn {
     animation: none;
@@ -73,4 +156,43 @@ body, html {
 }
 </style>
 </head>
+<body>
+  <img source src="UFO.png"alt="UFO"style="float:right;max-width:400px;top:0px;">
+
+  <h1>Welcome to an exclusive song!</h1>
+
+  <div class="container">
+    <h3>I figured I've been a jerk..</h3>
+    <p>Comparing all these artists to shitty things I found online, that's not nice.</br>At least these people are doing something with their lives, you know..</br>making art and expressing themselves.</br>But also, it's fun to laugh at things sometimes.</p>
+    <p>I figured the least I can do is to try and do it myself. It's only fair..</br>and I can keep laughing that way.</p>
+  </div>
+
+  <h2>Meet the band!</h2>
+  <button class="collapsible">Flwaless Rat and The Clankerfuckers</button>
+   <div class="content">
+     <img id="albumCover"src="Clankerfuckers.png"alt="albumCover"><li id="artist"><b>Flwaless Rat:</b></br>Lyricist, chaos provider</br><b>Marcus</b></br>Producer, guitarist</br><b>Damiaan</b></br>Producer, pianist</br><b>Freya</b></br>Vocalist</li><li id="songTitle"><b>One More Decade</b></li><audio controls></audio>
+   </div>
+
+  <h2>Am I uncultured?</h2>
+  <button class="collapsible">How I felt explaining to professional musicians what I wanted for this song:</button>
+   <div class="content">
+     <img id="albumCover"src="LDN.png"alt="albumCover"><li id="artist"><b>Lily Allen</b></li><li id="songTitle">LDN in that record shop</li><audio controls><source src="LDN.mp3"></audio>
+   </div>
+</body>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+</script>
 </html>
