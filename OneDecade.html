@@ -1,128 +1,188 @@
-<!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>One More Decade</title><link rel="icon"type="image/x-icon"href="MiniPara.png">
- <style>
-  body, html {
-     background-color:black;
-   }
-   h1, h2 {
-    font-size:40px;
-    color:yellow;
-   }
-  h3 {
-   font-size:30px;
-   color:yellow;
+<!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="device=device-width, initial-scale=1.0"><title>One More Decade</title><link rel="icon"type="image/x-icon"href="MiniPara.png">
+<style>
+    .ab-07,
+      .ab-07 *,
+      .ab-07 *::before,
+      .ab-07 *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+    .ab-07__btn {
+        display: inline-block;
+        font-size: 20px;
+        color: #fff;
+        background: linear-gradient(90deg,#7c3aed,#06b6d4,#f43f5e,#7c3aed);
+        background-size: 300% 300%;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        outline: none;
+        letter-spacing: .03em;
+        animation: ab-07-shift 2s ease infinite;
+        will-change: background-position;
+        box-shadow: 0 4px 20px rgba(124,58,237,.4);
+        transition: filter .2s,box-shadow .2s,transform .15s;
+        position:absolute;
+        left:600px;
+        top:0px;
+        width:100px;
+        height:100px;
+}
+    .ab-07__btn:hover {
+        filter: brightness(1.12);
+        box-shadow: 0 6px 32px rgba(124,58,237,.6);
+        transform: translateY(-2px);
+}
+    .ab-07__btn:active {
+        transform: translateY(0);
+        filter: brightness(.95);
+}
+    @keyframes ab-07-shift {
+        0% {
+            background-position: 0% 50%;
   }
-  p {
-   font-size:20px;
-   color:yellow;
+         50% {
+             background-position: 100% 50%;
   }
-  .content li {
-   list-style:none;
+        100% {
+            background-position: 0% 50%;
   }
-  .active, .subgenre:hover {
-   background-color:red;
+ }
+    @media (prefers-reduced-motion: reduce) {
+        .ab-07__btn {
+            animation: none;
+            background: linear-gradient(90deg,#7c3aed,#06b6d4);
   }
-  .content {
-   padding:0 18px;
-   max-height:0;
-   width:300px;
-   overflow:hidden;
-   transition:max-height 0.2s ease-out;
-   background-color:yellow;
-   color:black;
-   position:relative;
-  }
-  audio::-webkit-media-controls-panel {
-  background-color:yellow;
-  }
-  audio {
-   height:50px;
-   width:300px;
-   margin-bottom:10px;
-  }
-  .collapsible {
-   background-color:yellow;
-   font-size:30px;
-   height:110px;
-   width:500px;
-  }
-  #albumCover {
-   width:250px;
-   height:230px;
-   margin-top:5px;
-  }
-  #artist {
-   font-size:30px;
-   margin-bottom:30px;
-  }
-  #songTitle {
-   font-size:20px;
-   font-weight:bold;
-   margin-bottom:5px;
-  }
-  #btnhypr {
-   background-color:radial-gradient(circle,rgba(63,94,251,1) 0%, rgba(101,27,171,1) 40%, rgba(230,53,227,1) 46%);
-  }
-  @media screen and (max-width:570px) {
-   audio {
-    height:30px;
-    width:220px;
-   }
-   .collapsible {
-    width:60%;
-    height:10%;
-    text-align:center;
-   }
-   .content {
-    width:50%;
-   }
-   #albumCover {
-    height:70%;
-    width:70%;
-   }
-   #artist {
-    font-size:5vw;
-   }
-   #songTitle {
-    font-size:3vw;
-   }
- </style>
+}
+    body, html {
+        background-color:black;
+}
+    h1, h2 {
+        font-size:30px;
+        color:yellow;
+}
+    h3 {
+        font-size:25px;
+        color:yellow;
+}
+    p {
+        font-size:20px;
+        color:yellow;
+}
+    .content li {
+        list-style:none;
+}
+    .active, .collapsible:hover {
+        background-color:blue;
+}
+    .content {
+        padding:0 18px;
+        max-height:0;
+        width:350px;
+        overflow:hidden;
+        transition:max-height 0.2s ease-out;
+        background-color:yellow;
+        color:black;
+        position:relative;
+}
+    audio::-webkit-media-controls-panel {
+        background-color:yellow;
+}
+    audio {
+        height:50px;
+        width:300px;
+        margin-bottom:10px;
+}
+    .collapsible {
+        background-color:yellow;
+        font-size:30px;
+        font-weight:85%;
+        height:110px;
+        width:400px;
+}
+    #albumCover {
+        width:250px;
+        height:250px;
+        margin-top:5px;
+}
+    #artist {
+        font-size:30px;
+}
+    #songTitle {
+        font-size:25px;
+        margin-bottom:5px;
+}
+    @media screen and (max-width:570px) {
+        audio {
+            height:30px;
+            width:220px;
+        }
+         .collapsible {
+             width:80%;
+             height:10%;
+         }
+        .content {
+            width:50%;
+        }
+        #albumCover {
+            width:70%;
+            height:70%;
+        }
+        #artist {
+            font-size:4vw;
+        }
+        #songTitle {
+            font-size:3vw;
+        }
+        .ab-07__btn {
+            position:absolute;
+            top:0px;
+            left:310px;
+        }
+}
+</style>
 </head>
-  <body>
-    <img source src="UFO.jpg"alt="UFO"style="float:right;max-width:400px;top:0px;">
-    
-     <h1>Welcome to an exclusive song!</h1>
-     <h3>I figured I've been a jerk..</h3>
-     <p>Comparing all these artists to shitty things I found on the internet. That's not nice.</br>At least these people are doing something with their lives, you know..</br>Making art and expressing themselves.</br>But also, it's fun to laugh at things sometimes.</p>
-     <p>I figured the least I can do is to try and do it better myself. It's only fair..</br> and I can keep laughing that way.</p>
-
-   <h2>So meet the band!</h2>
-   <button class="collapsible">Flwaless Rat and The Clankerfuckers</button>
-    <div class="content">
-     <img id="albumCover"src="Clankerfuckers.png"alt="albumCover"><li id="artist"><b>Flwaless Rat:</b></br>Lyricist, chaos provider</br><b>Marcus:</b></br>Producer, guitarist</br><b>Damiaan:</b></br>Producer, pianist</br><b>Freya:</b></br>Vocalist</li><li id="songTitle">One More Decade</li><audio controls></audio>
+<body>
+    <div class="ab-07">
+        <button class="ab-07__btn" onclick="document.location='DoomedForever.html'">AI</br>song</br>enhancer</button>
     </div>
-     
-   
-   <h2>Am I uncultured?</h2>
-   <button class="collapsible">How I felt explaining to professional musicians what I wanted for this song:</button>
-    <div class="content">
-     <img id="albumCover"src="LDN.png"alt="albumCover"><li id="artist"><b>Lily Allen</b></li><li id="songTitle">LDN in that record shop</li><audio controls><source src="LDN.mp3"></audio>
-    </div>
-   <button id="btnhypr" onclick="document.location='indexmobiletest.html'">Click here to enhance</br>this song with AI</button>
-  </body>
- <script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
+  
+  <img source src="UFO.jpg"alt="UFO"style="float:right;max-width:400px;top:0px;">
 
-  for (i = 0; i < coll.length; i++) {
-   coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-     content.style.maxHeight = null;
-    } else {
-     content.style.maxHeight = content.scrollHeight + "px";
+  <h1>Welcome to an exclusive song!</h1>
+
+  <h3>I figured I've been a jerk..</h3>
+    <p>Comparing all these artists to shitty things I found online, that's not nice.</br>At least these people are doing something with their lives, you know..</br>making art and expressing themselves.</br>But also, it's fun to laugh at things sometimes.</p>
+    <p>I figured the least I can do is to try and do it myself. It's only fair..</br>and I can keep laughing that way.</p>
+  
+
+  <h2>Meet the band!</h2>
+    <button class="collapsible">Flwaless Rat and The Clankerfuckers</button>
+    <div class="content">
+        <img id="albumCover"src="Clankerfuckers.png"alt="albumCover"><li id="artist"><b>Flwaless Rat:</b></br>Lyricist, chaos provider</br><b>Marcus</b></br>Producer, guitarist</br><b>Damiaan</b></br>Producer, pianist</br><b>Freya</b></br>Vocalist</li><li id="songTitle"><b>One More Decade</b></li><audio controls></audio>
+   </div>
+
+  <h2>Am I uncultured?</h2>
+    <button class="collapsible">How I felt explaining to professional musicians what I wanted for this song:</button>
+    <div class="content">
+        <img id="albumCover"src="LDN.png"alt="albumCover"><li id="artist"><b>Lily Allen</b></li><li id="songTitle">LDN in that record shop</li><audio controls><source src="LDN.mp3"></audio>
+    </div>
+</body>
+<script>
+ var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
     }
-   });
-  }
- </script>
+</script>
 </html>
