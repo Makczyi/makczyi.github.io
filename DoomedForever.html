@@ -1,70 +1,76 @@
-<!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Doomed Forever</title><link rel="icon"type="image/x-icon"href="MiniPara.png">
-  <style>
-    * {
-      box-sizing:border-box;
-    }
-    html, body {
-      height:100%;
-      margin:0;
-      overflow:hidden;
-      padding:0;
-    }
-    body {
-      background: hsla(0, 0.0000%, 20.0000%, 1.0000);
-      cursor:pointer;
-    }
-    @keyframes animatedBackground {
-      from { background-position: 0 0; }
-      to { background-position: 100% 0; }
-    }
-    .flex-container {
-      align-items: center;
-      display: flex;
-      height: 100%;
-      justify-content: center;
-    }
-    #dot {
-      background-color: transparent;
-      border: 1px solid transparent;
-      cursor: pointer;
-      transition: border-top-width 0.5s ease,
-        border-left-width 0.5s ease 0.25s,
-        border-bottom-width 0.5s ease,
-        border-right-width 0.5s ease 0.25s,
-        border-color 1s ease 0.75s;
-      &.active {
-        animation: animatedBackground 0.2s linear infinite;
-        border-color: hsla(0, 0%, 100.0000%, 0.80000);
-        border-width: 1000px;
-        transition: border-top-width 0.5s ease 0.5s,
-          border-left-width 0.5s ease 0.75s,
-          border-bottom-width 0.5s ease 0.5s,
-          border-right-width 0.5s ease 0.75s,
-          border-color 0.5s ease;
-      }
-    }   
-  </style>
+<!DOCTYPE html><html>
   <body>
     <div class="flex-container">
       <div id="dot" class="active"></div>
     </div>
   </body>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+body {
+  background: hsla(0, 0.0000%, 20.0000%, 1.0000);
+  cursor: pointer;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+.flex-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+#dot {
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: border-top-width 0.5s ease,
+              border-left-width 0.5s ease  0.25s,
+              border-bottom-width 0.5s ease,
+              border-right-width 0.5s ease 0.25s,
+              border-color 1s ease 0.75s;
+  &.active {
+    animation: animatedBackground 0.2s linear infinite;
+    border-color: hsla(0, 0%, 100.0000%, 0.80000);
+    border-width: 1000px;
+    transition: border-top-width 0.5s ease 0.5s,
+                border-left-width 0.5s ease  0.75s,
+                border-bottom-width 0.5s ease 0.5s,
+                border-right-width 0.5s ease 0.75s,
+                border-color 0.5s ease;
+  }
+}
+  </style>
   <script>
-    function static() {
-      $('#dot').css('border-color', 'transparent');
-      $('#dot.active').noisy({
-        'intensity' : 1,
-        'size' : 1000,
-        'opacity' : 1,
-        'fallback' : '',
-        'monochrome' : true
-      }).css('background-color', '#fff');
-    }
-    
-    static();
-    
-    $('body').click(function onOff(){
-      $('#dot').toggleClass('active');
-    });
+function static() {
+  $('#dot').css('border-color', 'transparent');
+  $('#dot.active').noisy({
+    'intensity' : 1, 
+    'size' : 1000, 
+    'opacity' : 1, 
+    'fallback' : '', 
+    'monochrome' : true
+  }).css('background-color', '#fff');
+}
+
+static();
+
+$('body').click(function onOff(){
+  $('#dot').toggleClass('active');
+});
   </script>
 </html>
