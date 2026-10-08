@@ -1,8 +1,8 @@
 <!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vinyl Forever</title><link rel="icon"type="image/x-icon"href="MiniPara.png">
   <body>
-    <button class="backward" style=position:fixed;bottom:5px;right:120px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px; onclick="document.location='HipHop.html'"><span>&#8678;</span></br><p><b>Hip Hop</b></p></button>      
-    <button class="homepage" style=position:fixed;bottom:5px;right:5px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px; onclick="document.location='index.html'"><b>.... --- -- .</b></button>
-    <img src="SushBackground.png" alt="KittyDJ" id="kitty" style=max-width:80%;max-height:70%;top:5px;right:0px;position:fixed;>
+    <button class="backward" style="align:right;position:fixed;bottom:70px;right:0px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px;" onclick="document.location='HipHop.html'"><span>&#8678;</span></br><p><b>Hip Hop</b></p></button>      
+    <button class="homepage" style="align:right;position:fixed;bottom:0px;right:0px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px;" onclick="document.location='index.html'"><b>.... --- -- .</b></button>
+    <img src="SushBackground.png" alt="KittyDJ" id="kitty" style="max-width:200px;height:200px;top:5px;right:0px;position:fixed;">
   </body>
     <style>
        body, html {
@@ -66,6 +66,47 @@
       background-color:rgb(112, 41, 99);
       outline:none;
      }
+     audio {
+       width:300px;
+       height:50px;
+     }
+    @media screen and (max-width:570px) {
+      #genre {
+        width:40%;
+        height:auto;
+        font-size:5vw;
+      }
+      #kitty {
+        max-width:50%;
+        height:50%;
+      }
+      .subgenre {
+        width:55%;
+        height:10%;
+        font-size:4vw;
+      }
+      #albumCover {
+        height:70%;
+        width:70%;
+        margin-top:5px;
+      }
+      #artist {
+        font-size:5vw;
+        color:white;
+      }
+      #songTitle {
+        font-size:4vw;
+        margin-bottom:5px;
+        color:white;
+      }
+      .content {
+        max-width:50%;
+      }
+      audio {
+        width:220px;
+        height:30px;
+      }
+    }
 </style>
 </head>
 <body>
