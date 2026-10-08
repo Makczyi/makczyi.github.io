@@ -1,188 +1,148 @@
-<!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="device=device-width, initial-scale=1.0"><title>One More Decade</title><link rel="icon"type="image/x-icon"href="MiniPara.png">
-<style>
-    .ab-07,
-      .ab-07 *,
-      .ab-07 *::before,
-      .ab-07 *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-}
-    .ab-07__btn {
-        display: inline-block;
-        font-size: 20px;
-        color: #fff;
-        background: linear-gradient(90deg,#7c3aed,#06b6d4,#f43f5e,#7c3aed);
-        background-size: 300% 300%;
-        border: none;
-        border-radius: 12px;
-        cursor: pointer;
-        outline: none;
-        letter-spacing: .03em;
-        animation: ab-07-shift 2s ease infinite;
-        will-change: background-position;
-        box-shadow: 0 4px 20px rgba(124,58,237,.4);
-        transition: filter .2s,box-shadow .2s,transform .15s;
-        position:absolute;
-        left:600px;
-        top:0px;
-        width:100px;
-        height:100px;
-}
-    .ab-07__btn:hover {
-        filter: brightness(1.12);
-        box-shadow: 0 6px 32px rgba(124,58,237,.6);
-        transform: translateY(-2px);
-}
-    .ab-07__btn:active {
-        transform: translateY(0);
-        filter: brightness(.95);
-}
-    @keyframes ab-07-shift {
-        0% {
-            background-position: 0% 50%;
-  }
-         50% {
-             background-position: 100% 50%;
-  }
-        100% {
-            background-position: 0% 50%;
-  }
- }
-    @media (prefers-reduced-motion: reduce) {
-        .ab-07__btn {
-            animation: none;
-            background: linear-gradient(90deg,#7c3aed,#06b6d4);
-  }
-}
+<!DOCTYPE html><html><head lang="en"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="icon"type="image/x-icon"href="MiniPara.png">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Dance Forever</title>
+  <style>
     body, html {
-        background-color:black;
-}
-    h1, h2 {
-        font-size:30px;
-        color:yellow;
-}
-    h3 {
-        font-size:25px;
-        color:yellow;
-}
-    p {
-        font-size:20px;
-        color:yellow;
-}
-    .content li {
-        list-style:none;
-}
-    .active, .collapsible:hover {
-        background-color:blue;
-}
-    .content {
-        padding:0 18px;
-        max-height:0;
-        width:350px;
-        overflow:hidden;
-        transition:max-height 0.2s ease-out;
-        background-color:yellow;
-        color:black;
-        position:relative;
-}
-    audio::-webkit-media-controls-panel {
-        background-color:yellow;
-}
-    audio {
-        height:50px;
-        width:300px;
-        margin-bottom:10px;
-}
-    .collapsible {
-        background-color:yellow;
-        font-size:30px;
-        font-weight:85%;
-        height:110px;
-        width:400px;
-}
-    #albumCover {
-        width:250px;
-        height:250px;
-        margin-top:5px;
-}
-    #artist {
-        font-size:30px;
-}
-    #songTitle {
-        font-size:25px;
-        margin-bottom:5px;
-}
-    @media screen and (max-width:570px) {
-        audio {
-            height:30px;
-            width:220px;
-        }
-         .collapsible {
-             width:80%;
-             height:10%;
-         }
-        .content {
-            width:50%;
-        }
-        #albumCover {
-            width:70%;
-            height:70%;
-        }
-        #artist {
-            font-size:4vw;
-        }
-        #songTitle {
-            font-size:3vw;
-        }
-        .ab-07__btn {
-            position:absolute;
-            top:0px;
-            left:310px;
-        }
-}
-</style>
-</head>
-<body>
-    <div class="ab-07">
-        <button class="ab-07__btn" onclick="document.location='DoomedForever.html'">AI</br>song</br>enhancer</button>
-    </div>
-  
-  <img source src="UFO.jpg"alt="UFO"style="float:right;max-width:400px;top:0px;">
-
-  <h1>Welcome to an exclusive song!</h1>
-
-  <h3>I figured I've been a jerk..</h3>
-    <p>Comparing all these artists to shitty things I found online, that's not nice.</br>At least these people are doing something with their lives, you know..</br>making art and expressing themselves.</br>But also, it's fun to laugh at things sometimes.</p>
-    <p>I figured the least I can do is to try and do it myself. It's only fair..</br>and I can keep laughing that way.</p>
-  
-
-  <h2>Meet the band!</h2>
-    <button class="collapsible">Flwaless Rat and The Clankerfuckers</button>
-    <div class="content">
-        <img id="albumCover"src="Clankerfuckers.png"alt="albumCover"><li id="artist"><b>Flwaless Rat:</b></br>Lyricist, chaos provider</br><b>Marcus</b></br>Producer, guitarist</br><b>Damiaan</b></br>Producer, pianist</br><b>Freya</b></br>Vocalist</li><li id="songTitle"><b>One More Decade</b></li><audio controls></audio>
-   </div>
-
-  <h2>Am I uncultured?</h2>
-    <button class="collapsible">How I felt explaining to professional musicians what I wanted for this song:</button>
-    <div class="content">
-        <img id="albumCover"src="LDN.png"alt="albumCover"><li id="artist"><b>Lily Allen</b></li><li id="songTitle">LDN in that record shop</li><audio controls><source src="LDN.mp3"></audio>
-    </div>
-</body>
-<script>
- var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
+      background:repeating-radial-gradient(ellipse, #89f336 97%, #ff13f0 100%);
+      background-size:cover;
+      background-repeat:repeat;
+      height:100%;
     }
-</script>
+    #modalButton {
+      position:absolute;
+      top:0px;
+      right:0px;
+      color:Red;
+    }
+    .modal-body, .modal-header, .modal-footer {
+      background-color:SlateBlue;
+      color:Red;
+      text-align:center;
+    }
+    #btnhypr {
+      display:inline;
+      position:relative;
+      background-color:rgb(137,243,54);
+      color:rgb(255,19,240);
+      bottom:10px;
+      border:solid 5px;
+      max-width:25%;
+      font-size:3vw;
+      margin:25px;
+    }
+    
+    h1 {
+      background-color:rgb(159,43,104);
+      color:rgb(255,19,240);
+      max-width:30%;
+      height:auto;
+      font-weight:bold;
+      margin-top:0px;
+      margin-left:6px;
+    }
+    h3 {
+      font-size:2vw;
+      background-color:rgb(255,19,240);
+      color:rgb(137,243,54);
+      max-width:20%;
+      height:auto;
+      margin-left:6px
+    }
+    #bonus {
+      position:absolute;
+      max-width:20%;
+      height:10%;
+      bottom:0px;
+      right:0px;
+      background-color:darkblue;
+      color:red;
+    }
+    p1 {
+      position:absolute;
+      max-width:40%;
+      bottom:0px;
+      left:5px;
+      font-size:2rem;
+      background-color:rgb(159,43,104);
+    }
+    @media screen and (min-width:600px) {
+      #btnhypr {
+        width:100%;
+        height:80%;
+        font-size:20px;
+        margin:50px;
+      }
+      h1 {
+        font-size:6vw;
+        left:0px;
+      }
+      h3 {
+        font-size:6vw;
+        max-width:40%;
+        left:0px;
+      }
+      p1 {
+        font-size:6vw;
+        max-width:30%;
+        left:0px;
+      }
+      #modalButton {
+        max-width:20%;
+      }
+      #bonus {
+        max-width:30%;
+        height:10%;
+      }
+    }
+  </style>
+</head>
+  <body>
+
+    <div class="container mt-3">
+      <button type="button" id="modalButton" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Click here for a surprise!
+      </button>
+    </div>
+
+
+     <div class="modal" id="myModal">
+     <div class="modal-dialog modal-sm">
+     <div class="modal-content">
+
+      
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      
+      <div class="modal-body">  🍌 Hello, world! 🍲  </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+   </div>
+  </div>
+
+  <h1>Summer</br> Dance</br> Forever '26</h1>
+  <h3>Choose your Forever:</h3>
+    
+
+   <button id="btnhypr" onclick="document.location='Locking.html'">Locking</button>
+   <button id="btnhypr" onclick="document.location='Waacking.html'">Waacking</button>
+   <button id="btnhypr" onclick="document.location='Popping.html'">Popping</button>
+   <button id="btnhypr" onclick="document.location='House.html'">House</button>
+   <button id="btnhypr" onclick="document.location='HipHop.html'">Hip Hop</button>
+   <button id="btnhypr" onclick="document.location='Vinyl.html'">Vinyl</button>
+  
+
+  
+    <button id="bonus" onclick="document.location='OneDecade.html'">Exclusive song: One More Decade</button>
+  
+
+    <p1>Design by FlwalessRat</p1>
+  
+  </body> 
 </html>
