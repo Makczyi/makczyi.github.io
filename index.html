@@ -12,17 +12,6 @@
     body {
       overflow:hidden;
     }
-    #btnhypr {
-      display:inline;
-      position:relative;
-      background-color:rgb(137,243,54);
-      color:rgb(255,19,240);
-      bottom:10px;
-      border:solid 5px;
-      max-width:25%;
-      font-size:3vw;
-      margin:25px;
-    }
     #modalButton {
       position:absolute;
       top:0px;
@@ -34,20 +23,34 @@
       color:Red;
       text-align:center;
     }
+    #btnhypr {
+      display:inline;
+      position:relative;
+      background-color:rgb(137,243,54);
+      color:rgb(255,19,240);
+      left:100px;
+      top:100px;
+      border:solid 5px;
+      width:155px;
+      height:100px;
+      font-size:2rem;
+      margin:40px;
+    }
+    
     h1 {
       background-color:rgb(159,43,104);
       color:rgb(255,19,240);
-      max-width:30%;
+      max-width:200px;
       height:auto;
       font-weight:bold;
       margin-top:0px;
       margin-left:6px;
     }
     h3 {
-      font-size:2vw;
+      font-size:1.5rem;
       background-color:rgb(255,19,240);
       color:rgb(137,243,54);
-      max-width:20%;
+      width:200px;
       height:auto;
       margin-left:6px
     }
@@ -62,41 +65,54 @@
     }
     p1 {
       position:absolute;
-      max-width:40%;
+      width:250px;
+      height:50px;
       bottom:0px;
       left:5px;
-      font-size:2rem;
+      font-size:1.5rem;
       background-color:rgb(159,43,104);
     }
-    @media screen and (max-width:600px) {
+    @media only screen and (max-width:600px) {
       #btnhypr {
-        width:40%;
-        height:10%;
-        font-size:20px;
-        margin:50px;
+        width:30%;
+        height:15%;
+        font-size:1.5rem;
+        margin:30px;
+        left:20px;
+        top:20px;
+        font-weight:bold;
       }
       h1 {
-        font-size:6vw;
+        font-size:1.5rem;
         left:0px;
+        width:40%; 
       }
       h3 {
-        font-size:5vw;
-        max-width:40%;
+        font-size:1rem;
+        width:30%;
         left:0px;
       }
       p1 {
-        font-size:3vw;
-        max-width:30%;
+        font-size:1rem;
+        width:40%;
+        height:2.5%;
         left:0px;
       }
       #modalButton {
         max-width:20%;
       }
-      #bonus {
-        max-width:30%;
-        height:10%;
-      }
     }
+    @media only screen and (min-width:1080px) {
+      #btnhypr {
+        left:20px;
+        margin:25px;
+        top:50px;
+        display:inline;
+      }
+      h1 {
+        width:50%;
+      }
+    }  
   </style>
 </head>
   <body>
@@ -138,11 +154,10 @@
    <button id="btnhypr" onclick="document.location='House.html'">House</button>
    <button id="btnhypr" onclick="document.location='HipHop.html'">Hip Hop</button>
    <button id="btnhypr" onclick="document.location='Vinyl.html'">Vinyl</button>
-   <button id="btnhypr" onclick="document.location='indexmobiletest.html'">Mobile Test</button>
   
-
+   <button onclick="document.location='indexmobiletest.html'">Mobile Test</button>
   
-    <button id="bonus" onclick="document.location='OneDecade.html'">Exclusive song: One More Decade</button>
+    
   
 
     <p1>Design by FlwalessRat</p1>
