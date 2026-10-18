@@ -1,54 +1,53 @@
-<!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Locking Forever</title><link rel="icon"type="image/x-icon"href="MiniPara.png">
+<!DOCTYPE html><html><head lang="en"<meta charset="utf-8"><meta name="viewport"content="width=device-width,initial-scale=1.0"><title>Waacking Forever</title><link rel="icon"type="image/x-icon"href="MiniPara.png">
 <body>
-   <button id="homepage" style="align:right;position:fixed;bottom:0;height:65px;right:0px;width:100px;font-size:20px;font-weight:10px;background-color:maroon;" onclick="document.location='index.html'"><b>.... --- -- .</b></button>
-   <button id="forward" style="align:right;position:fixed;bottom:70px;height:65px;right:0px;width:100px;font-size:20px;font-weight:10px;background-color:maroon;" onclick="document.location='Waacking.html'"><span><b>&#8680;</b></span></br><p><b>Waacking</b></p></button>
+<body>
 
-   <img src="DJMason.png"alt="MasonDJ" id="Mason"style="right:5px;max-width:200px;min-height:250px;top:5px;position:fixed;">
+  <button id="backward" style="align:right;position:fixed;bottom:140px;right:0px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px;" onclick="document.location='Locking.html'"><span>&#8678;</span></br><p><b>Locking</b></p></button>
+  <button id="homepage" style="align:right;position:fixed;bottom:70px;right:0px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px;" onclick="document.location='index.html'"><b>.... --- -- .</b></button>
+  <button id="forward" style="align:right;position:fixed;bottom:0px;right:0px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px;" onclick="document.location='Popping.html'"><span>&#8680;</span></br><p><b>Popping</b></p></button>
+ 
+  <img src="CooperSmall.png"alt="DJCooper"id="Cooper"style=right:5px;width:200px;height:60%;top:5px;position:fixed;>
 </body>
-<style> 
-  * {
-    padding:0;
-    margin:0;
+  <style>
+     body, html {
+    background:repeating-radial-gradient(ellipse, #330413 97%, #FF0000 100%);
+    background-size:cover;
+    background-repeat: repeat;
+    height:100%;
   }
- body, html {
-   background:repeating-radial-gradient(ellipse, #330413 97%, #FF0000 100%);
-   background-size:cover;
-   background-repeat:repeat;
-   height:100%;
- }
-  .content li {
-    list-style:none;
-  }
+    * {
+      margin:0;
+      padding:0;
+    }
+    .content li {
+      list-style:none;
+    }
   .active, .subgenre:hover {
     background-color:maroon;
   }
   .content {
     padding:0 18px;
     max-height:0;
-    width:360px;
+    width:350px;
     overflow:hidden;
     transition:max-height 0.2s ease-out;
-    background-color:rgb(112,41,99);
-    position:relative;
+    background-color:rgb(112, 41, 99);
+    color:white;
   }
   .day {
     background-color:darkblue;
     color:white;
     font-size:50px;
-    font-weight:25px;
+    font-weight:85%;
     width:350px;
-    height:auto;
-    left:0px;
   }
   .subgenre {
-    background-color:rgb(112,41,99);
+    background-color: rgb(112, 41, 99);
     color:white;
     font-size:30px;
     font-weight:85%;
     height:100px;
-    width:420px;
-    display:block;
-    position:relative;
+    width:400px;
   }
   #albumCover {
     width:250px;
@@ -56,140 +55,129 @@
     margin-top:5px;
   }
   #artist {
-    color:white;
-    font-size:4vw;
+    font-size:40px;
+    font-weight:60%;
     width:350px;
   }
-  #songTitle {
-     color:white;
-     font-size:3vw;
-     width:350px;
-     margin-bottom:5px;
+   #songTitle {
+    font-size:30px;
+    font-weight:50%;
+    margin-bottom:5px;
+    width:350px;
   }
   audio::-webkit-media-controls-panel {
-     background-color:rgb(112,41,99);
-  }
+  background-color:rgb(112, 41, 99);
+}
   audio {
-     height:50px;
-     width:300px;
-     margin-bottom:10px;
+    width:300px;
+    height:50px;
+    margin-bottom:10px;
   }
-  @media screen and (max-width:600px) {
-     audio {
-        height:30px;
-        width:220px;
-     }
-     .homepage {
-        position:fixed;
-        max-width:25%;
-        bottom:0px;
-        right:0px;
-     }
-     .forward {
-        position:fixed;
-        max-width:25%;
-        bottom:120px;
-        right:0px;
-     }
-     #Mason {
-        max-height:20%;
-        width:40%;
-     }
-     .subgenre {
-        font-size:4vw;
-        width:60%;
-        height:10%;
-        text-align:center;
-     }
-     .day {
-        font-size:6vw;
-        width:40%;
-        height:10%;
-     }
-     .content {
-        width:50%;
-     }
-     #albumCover {
-        height:70%;
-        width:70%;
-     }
-     #artist {
-       font-size:5vw;
-     }
-     #songTitle {
-        font-size:3vw;
-     }
-  }
-</style>
-</head>
-<body>
-   <h1 class="day">Day 1:</br>Locking</h1>
-<button class="subgenre">Funk/Soul</button>
-   <div class="content">
-      <img id="albumCover"src="KayGees.png"alt="albumCover"><li id="artist"><b>The Kay Gees</b></li><li id="songTitle">Kay Gees Theme Song</li><audio controls><source src="KayGees.mp3"></audio>
-      <img id="albumCover"src="GetUpOrGetOut.png"alt="albumCover"><li id="artist"><b>Bloodstone</b></li><li id="songTitle">Get Up Or Get Out</li><audio controls><source src="GetUpOrGetOut.mp3"></audio>
-      <img id="albumCover"src="OHIO.png"alt="albumCover"><li id="artist"><b>Ohio Players</b></li><li id="songTitle">O-H-I-O</li><audio controls><source src="OHIO.mp3"></audio>
-      <img id="albumCover"src="CutYouLoose.png"alt="albumCover"><li id="artist"><b>Kylie Auldist</b></li><li id="songTitle">Cut You Loose</li><audio controls><source src="CutYouLoose.mp3"></audio>
-      <img id="albumCover"src="AintWeFunkinNow.png"alt="albumCover"><li id="artist"><b>The Brothers</br>Johnson</b></li><li id="songTitle">Ain't We Funkin Now</li><audio controls><source src="AintWeFunkinNow.mp3"></audio>
-      <img id="albumCover"src="SteamTrain.png"alt="albumCover"><li id="artist"><b>Lee Fields</b></li><li id="songTitle">Steam Train</li><audio controls><source src="SteamTrain.mp3"></audio>
-      <img id="albumCover"src="LetsWorkAWhile.png"alt="albumCover"><li id="artist"><b>Bobby Williams</b></li><li id="songTitle">Let's Work A While</li><audio controls><source src="LetsWorkAWhile.mp3"></audio>
-      <img id="albumCover"src="TakeMeWithU.png"alt="albumCover"><li id="artist"><b>Sharon Jones &</br>The Dap-Kings</b></li><li id="songTitle">Take Me With U</li><audio controls><source src="TakeMeWithU.mp3"></audio>
-      <img id="albumCover"src="TrippingOnTheSound.png"alt="albumCover"><li id="artist"><b>Jeannie Tracy</b></li><li id="songTitle">Trippin On The Sound</li><audio controls><source src="TrippingOnTheSound.mp3"></audio>
-      <img id="albumCover"src="GetAway.png"alt="albumCover"><li id="artist"><b>Pure Funk</b></li><li id="songTitle">Get Away</li><audio controls><source src="GetAway.mp3"></audio>
-      <img id="albumCover"src="AMansGonnaDo.png"alt="albumCover"><li id="artist"><b>Jamal Thomas Band</b></li><li id="songTitle">A Man's Gonna Do</li><audio controls><source src="AMansGonnaDo.mp3"></audio>
-      <img id="albumCover"src="ToTheYard.png"alt="albumCover"><li id="artist"><b>Funkshone Feat.</br>The Easy Access</br> Orchestra</b></li><li id="songTitle">To The Yard (part 1)</li><audio controls><source src="ToTheYard.mp3"></audio>
-      <img id="albumCover"src="FastMan.png"alt="albumCover"><li id="artist"><b>The PC's Ltd</b></li><li id="songTitle">Fast Man</li><audio controls><source src="FastMan.mp3"></audio>
-      <img id="albumCover"src="DanceToOurMusic.png"alt="albumCover"><li id="artist"><b>Erasmus Hall</b></li><li id="songTitle">Dance To Our Music</li><audio controls><source src="DanceToOurMusic.mp3"></audio>
-      <img id="albumCover"src="Scorcher.png"alt="albumCover"><li id="artist"><b>Carl Grubbs</b></li><li id="songTitle">Scorcher</li><audio controls><source src="Scorcher.mp3"></audio>
-      <img id="albumCover"src="LoveGun.png"alt="albumCover"><li id="artist"><b>Rick James</b></li><li id="songTitle">Love Gun</li><audio controls><source src="LoveGun.mp3"></audio>
-      <img id="albumCover"src="SoMuchTrouble.png"alt="albumCover"><li id="artist"><b>Sir Joe Quarterman</b></li><li id="songTitle">So Much Trouble In My Mind</li><audio controls><source src="SoMuchTrouble.mp3"></audio>
-      <img id="albumCover"src="ThingsGotToGetBetter.png"alt="albumCover"><li id="artist"><b>Marva Whitney</b></li><li id="songTitle">Things Got To Get Better</li><audio controls><source src="ThingsGotToGetBetter.mp3"></audio>
-      <img id="albumCover"src="DanceAcrossTheFloor.png"alt="albumCover"><li id="artist"><b>Jimmy "Bo" Horne</b></li><li id="songTitle">Dance Across The Floor</li><audio controls><source src="DanceAcrossTheFloor.mp3"></audio>
-      <img id="albumCover"src="SuperBad.png"alt="albumCover"><li id="artist"><b>James Brown</b></li><li id="songTitle">Super Bad (Parts 1, 2, 3)</li><audio controls><source src="SuperBad.mp3"></audio>
-      <img id="albumCover"src="DanceWitMe.png"alt="albumCover"><li id="artist"><b>Rick James</b></li><li id="songTitle">Dance Wit' Me</li><audio controls><source src="DanceWitMe.mp3"></audio>
-   </div>
-
- <button class="subgenre">Jazz/Funk/Soul</button>
-   <div class="content">
-      <img id="albumCover"src="UpTheFunk.png"alt="albumCover"><li id="artist"><b>Doug Johns</b></li><li id="songTitle">Up The Funk</li><audio controls><source src="UpTheFunk.mp3"></audio>
-      <img id="albumCover"src="SoulMusic.png"alt="albumCover"><li id="artist"><b>Philip Lassiter</b></li><li id="songTitle">Soul Music</li><audio controls><source src="SoulMusic.mp3"></audio>
-      <img id="albumCover"src="ThePanther.png"alt="albumCover"><li id="artist"><b>Manu Dibango</b></li><li id="songTitle">Panther</li><audio controls><source src="Panther.mp3"></audio>
-      <img id="albumCover"src="MidnightAfterDark.png"alt="albumCover"><li id="artist"><b>Roy Ayers Ubiquity</b></li><li id="songTitle">Midnight After Dark</li><audio controls><source src="MidnightAfterDark.mp3"></audio>
-      <img id="albumCover"src="FunkinForTheThrill.png"alt="albumCover"><li id="artist"><b>George Duke</b></li><li id="songTitle">Funkin' For The Thrill</li><audio controls><source src="FunkinForTheThrill.mp3"></audio>
-      <img id="albumCover"src="SuperStrutPtOne.png"alt="albumCover"><li id="artist"><b>Kashmere</br>Stage Band</b></li><li id="songTitle">Super Strut Part One</li><audio controls><source src="SuperStrutPtOne.mp3"></audio>
-      <img id="albumCover"src="Journey.png"alt="albumCover"><li id="artist"><b>Secret Night Game</b></li><li id="songTitle">Journey</li><audio controls><source src="Journey.mp3"></audio>
-      <img id="albumCover"src="SoIGotToGroove.png"alt="albumCover"><li id="artist"><b>Tower Of Power</b></li><li id="songTitle">So I Got To Groove</li><audio controls><source src="SoIGotToGroove.mp3"></audio>
-      <img id="albumCover"src="Ketosis.png"alt="albumCover"><li id="artist"><b>Cory Wong</b></li><li id="songTitle">Ketosis</li><audio controls><source src="Ketosis.mp3"></audio>
-   </div>
-<button class="subgenre">Electronic/HipHop/Funk/Soul</button>
-   <div class="content">
-      <img id="albumCover"src="FunkyLover.png"alt="albumCover"><li id="artist"><b>G. Bonson</b></li><li id="songTitle">Funky Lover</li><audio controls><source src="FunkyLover.mp3"></audio>
-      <img id="albumCover"src="Shine.png"alt="albumCover"><li id="artist"><b>Luther Vandross</b></li><li id="songTitle">Shine</li><audio controls><source src="Shine.mp3"></audio>
-      <img id="albumCover"src="SunsetDriver.png"alt="albumCover"><li id="artist"><b>Michael Jackson</b></li><li id="songTitle">Sunset Driver</li><audio controls><source src="SunsetDriver.mp3"></audio>
-   </div>
-<button class="subgenre">HipHop/Latin/Funk/Soul</button>
-   <div class="content">
-      <img id="albumCover"src="ChopChase.png"alt="albumCover"><li id="artist"><b>Grooveline Horns</b></li><li id="songTitle">Chopchase</li><audio controls><source src="ChopChase.mp3"></audio>
-   </div>
-<h1 class="day">Am I uncultured?</h1>
-   <button class="subgenre">What some shit reminded me of:</button>
-    <div class="content">
-       <img id="albumCover"src="Seinfeld.png"alt="albumCover"><li id="artist"><b>Seinfeld</b></li><li id="songTitle">Opening Theme</li><audio controls><source src="Seinfeld.mp3"></audio>
-    </div>
-</body>
-<script>
-   var coll = document.getElementsByClassName("subgenre");
-   var i;
-
-   for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-         this.classList.toggle("active");
-         var content = this.nextElementSibling;
-         if (content.style.maxHeight){
-            content.style.maxHeight = null;
-         } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-         }
-      });
+   @media screen and (max-width:600px) {
+   .day {
+   font-size:6vw;
+   width:40%;
+   height:10%;
    }
-</script>
+   #Cooper {
+     max-width:40%;
+     height:2%;
+    }
+    .subgenre {
+    font-size:4vw;
+    width:50%;
+    height:10%;
+    }
+    #albumCover {
+     height:70%;
+     width:70%;
+    }
+    #artist {
+      font-size:5vw;
+    }
+    #songTitle {
+      font-size:3vw;
+      margin-bottom:5px;
+    }
+    .content {
+     max-width:55%;
+    }
+    audio {
+      width:220px;
+      height:50px;
+    }
+   }
+  </style>
+</head>
+  <body>
+    <h1 class="day">Day 2: Waacking</h1>
+
+    <button class="subgenre">Electronic/Funk/</br>Soul/Jazz</button>
+     <div class="content">
+       <img id="albumCover"src="QueenOfTheNight.png"alt="albumCover"><li id="artist"><b>Whitney Houston & C.J.</b></li><li id="songTitle">Queen Of The Night</li><audio controls><source src="QueenOfTheNight.mp3"></audio>
+       <img id="albumCover"src="MostPreciousLove.png"alt="albumCover"><li id="artist"><b>Barbara Tucker,</br> Df Future</b></li><li id="songTitle">Most Precious Love</li><audio controls><source src="MostPreciousLove.mp3"></audio>
+       <img id="albumCover"src="Breathe.png"alt="albumCover"><li id="artist"><b>The Prodigy</b></li><li id="songTitle">Breathe</li><audio controls><source src="Breathe.mp3"></audio>
+       <img id="albumCover"src="MastersAtWork.png"alt="albumCover"><li id="artist"><b>Chris Cuevas / </br>Kenny Dope</b></li><li id="songTitle">Masters At Work</li><audio controls><source src="MastersAtWork.mp3"></audio>
+       <img id="albumCover"src="SavedMyLife.png"alt="albumCover"><li id="artist"><b>Lil' Louis & The World</b></li><li id="songTitle">Saved My Life</li><audio controls><source src="SavedMyLife.mp3"></audio>
+       <img id="albumCover"src="IFeelLove.png"alt="albumCover"><li id="artist"><b>Donna Summer</b></li><li id="songTitle">I Feel Love</li><audio controls><source src="IFeelLove.mp3"></audio>
+       <img id="albumCover"src="GetDown.png"alt="albumCover"><li id="artist"><b>Todd Terry All Stars</b></li><li id="songTitle">Get Down</li><audio controls><source src="GetDown.mp3"></audio>
+       <img id="albumCover"src="ComputerMadness.png"alt="albumCover"><li id="artist"><b>Steve Poindexter</b></li><li id="songTitle">Computer Madness</li><audio controls><source src="ComputerMadness.mp3"></audio>
+       <img id="albumCover"src="Rej.png"alt="albumCover"><li id="artist"><b>Ame</b></li><li id="songTitle">Rej</li><audio controls><source src="Rej.mp3"></audio>
+       <img id="albumCover"src="GypsyMen.png"alt="albumCover"><li id="artist"><b>Todd Terry &</br>The Gypsymen</b></li><li id="songTitle">Babarabatiri</li><audio controls><source src="Babarabatiri.mp3"></audio>
+       <img id="albumCover"src="SoMuchBetta.png"alt="albumCover"><li id="artist"><b>Janet Jackson</b></li><li id="songTitle">So Much Betta</li><audio controls><source src="SoMuchBetta.mp3"></audio>
+       <img id="albumCover"src="DejaVu.png"alt="albumCover"><li id="artist"><b>Beyoncé</b></li><li id="songTitle">Deja Vu</li><audio controls><source src="DejaVu.mp3"></audio>
+       <img id="albumCover"src="ColdHearted.png"alt="albumCover"><li id="artist"><b>Paula Abdul</b></li><li id="songTitle">Cold Hearted</li><audio controls><source src="ColdHearted.mp3"></audio>
+       <img id="albumCover"src="SecretGarden.png"alt="albumCover"><li id="artist"><b>Madonna</b></li><li id="songTitle">Secret Garden</li><audio controls><source src="SecretGarden.mp3"></audio>
+       <img id="albumCover"src="BodyTalk.png"alt="albumCover"><li id="artist"><b>The Deele</b></li><li id="songTitle">Body Talk</li><audio controls><source src="BodyTalk.mp3"></audio>
+       <img id="albumCover"src="LoveInCMinor.png"alt="albumCover"><li id="artist"><b>Cerrone /</br>Dimitri From Paris</br>(remix)</b></li><li id="songTitle">Love In C Minor</li><audio controls><source src="LoveInCMinor.mp3"></audio>
+       <img id="albumCover"src="WhyDontYou.png"alt="albumCover"><li id="artist"><b>Gramophonedzie</b></li><li id="songTitle">Why Don't You</li><audio controls><source src="WhyDontYou.mp3"></audio>
+       <img id="albumCover"src="MakeMe.png"alt="albumCover"><li id="artist"><b>Janet Jackson</b></li><li id="songTitle">Make Me</li><audio controls><source src="MakeMe.mp3"></audio>
+    </div>
+<!----This Should be Criminal actually because it is horrendous------>
+    <button class="subgenre">Classical</button>
+     <div class="content">
+       <img id="albumCover"src="SmoothCriminal.png"alt="albumCover"><li id="artist"><b>David Garrett</b></li><li id="songTitle">Smooth Criminal</li><audio controls><source src="SmoothCriminal.mp3"></audio>
+     </div>
+    <button class="subgenre">Funk/Soul</button>
+     <div class="content">
+       <img id="albumCover"src="CantHideFromYourself.png"alt="albumCover"><li id="artist"><b>Teddy Pendergrass</b></li><li id="songTitle">You Can't Hide From Yourself</li><audio controls><source src="YouCantHideFromYourself.mp3"></audio>
+       <img id="albumCover"src="Dreamin.png"alt="albumCover"><li id="artist"><b>Loleatta Holloway</b></li><li id="songTitle">Dreamin</li><audio controls><source src="Dreamin.mp3"></audio>
+       <img id="albumCover"src="WearItOut.png"alt="albumCover"><li id="artist"><b>Stargard</b></li><li id="songTitle">Wear It Out</li><audio controls><source src="WearItOut.mp3"></audio>
+       <img id="albumCover"src="1985.png"alt="albumCover"><li id="artist"><b>Jimmy Sax</b></li><li id="songTitle">1985</li><audio controls><source src="1985.mp3"></audio>
+       <img id="albumCover"src="LoveMachine.png"alt="albumCover"><li id="artist"><b>Miracles</b></li><li id="songTitle">Love Machine, Part 1</li><audio controls><source src="LoveMachine.mp3"></audio>
+       <img id="albumCover"src="ItAintEazy.png"alt="albumCover"><li id="artist"><b>Eyezc Haze</b></li><li id="songTitle">It Ain't Eazy</li><audio controls><source src="ItAintEazy.mp3"></audio>
+       <img id="albumCover"src="Nostradamus.png"alt="albumCover"><li id="artist"><b>Bastetrak</b></li><li id="songTitle">Nostradamus</li><audio controls><source src="Nostradamus.mp3"></audio>
+       <img id="albumCover"src="DiscoHeat.png"alt="albumCover"><li id="artist"><b>Sylvester</b></li><li id="songTitle">Dance (Disco Heat)</li><audio controls><source src="DiscoHeat.mp3"></audio>
+       <img id="albumCover"src="PsychOut.png"alt="albumCover"><li id="artist"><b>The Jimmy Castor</br> Bunch</b></li><li id="songTitle">Psych-Out</li><audio controls><source src="PsychOut.mp3"></audio>
+       <img id="albumCover"src="BoogieWonderland.png"alt="albumCover"><li id="artist"><b>Earth, Wind & Fire</b></li><li id="songTitle">Boogie Wonderland</li><audio controls><source src="BoogieWonderland.mp3"></audio>
+       <img id="albumCover"src="ThinkItOver.png"alt="albumCover"><li id="artist"><b>Cissy Houston</b></li><li id="songTitle">Think It Over</li><audio controls><source src="ThinkItOver.mp3"></audio>
+       <img id="albumCover"src="MagicBirdOfFire.png"alt="albumCover"><li id="artist"><b>The Salsoul Orchestra</b></li><li id="songTitle">Magic Bird Of Fire</li><audio controls><source src="MagicBirdOfFire.mp3"></audio>
+       <img id="albumCover"src="SavageLover.png"alt="albumCover"><li id="artist"><b>The Ring</b></li><li id="songTitle">Savage Lover</li><audio controls><source src="SavageLover.mp3"></audio>
+       <img id="albumCover"src="DontMessAround.png"alt="albumCover"><li id="artist"><b>Neon Dreams</b></li><li id="songTitle">Don't Mess Around</li><audio controls><source src="DontMessAround.mp3"></audio>
+       <img id="albumCover"src="DiscoConnection.png"alt="albumCover"><li id="artist"><b>Isaac Hayes</b></li><li id="songTitle">Disco Connection</li><audio controls><source src="DiscoConnection.mp3"></audio>
+       <img id="albumCover"src="50PenceGenc.png"alt="albumCover"><li id="artist"><b>Rami Ali</b></li><li id="songTitle">50 Pence Genc</li><audio controls><source src="50PenceGenc.mp3"></audio>
+       <img id="albumCover"src="OnlyU.png"alt="albumCover"><li id="artist"><b>Ashanti</b></li><li id="songTitle">Only U</li><audio controls><source src="OnlyU.mp3"></audio>
+     </div>
+    <h1 class="day">Am I Uncultured?</h1>
+    <button class="subgenre">What some shit made me think of:</button>
+     <div class="content">
+       <img id="albumCover"src="DjToenail.png"alt="Toenail"><li id="artist"><b>DJ Toenail</b></li><li id="songTitle">Bacteria Beat</li><audio controls><source src="BacteriaBeat.mp3"></audio>
+     </div>
+  <script>
+    var coll = document.getElementsByClassName("subgenre");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
