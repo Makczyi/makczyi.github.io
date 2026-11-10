@@ -6,14 +6,10 @@
   </body>
     <style>
       #bonus {
-        align:right;
         position:fixed;
-        bottom:140px;
-        right:0px;
-        height:40px;
-        width:100px;
         background-color:maroon;
         font-size:15px;
+        font-weight:20px;
       }
        body, html {
         background:repeating-radial-gradient(ellipse, #682503 97%, #FF00FF 100%);
@@ -83,6 +79,11 @@
        margin-bottom:10px;
      }
     @media screen and (max-width:600px) {
+      #bonus {
+        align:right;
+        height:65px;
+        width:100px;
+      }
       #genre {
         width:40%;
         height:8%;
@@ -119,6 +120,13 @@
         height:30px;
       }
     }
+    @media screen and (min-width:1080px;) {
+      #bonus {
+        align:top;
+        right:400px;
+        background-color:yellow;
+        color:black;
+      }
 </style>
 </head>
 <body>
