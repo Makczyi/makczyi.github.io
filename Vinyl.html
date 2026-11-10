@@ -2,9 +2,19 @@
   <body>
     <button class="backward" style="align:right;position:fixed;bottom:70px;right:0px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px;" onclick="document.location='HipHop.html'"><span>&#8678;</span></br><p><b>Hip Hop</b></p></button>      
     <button class="homepage" style="align:right;position:fixed;bottom:0px;right:0px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px;" onclick="document.location='index.html'"><b>.... --- -- .</b></button>
-    <img src="SushBackground.png" alt="KittyDJ" id="kitty" style="max-width:400px;height:400px;top:5px;right:0px;position:fixed;">
+    <img src="SushBackground.png" alt="KittyDJ" id="kitty" style="max-width:400px;height:400px;top:0px;right:0px;position:fixed;">
   </body>
     <style>
+      #bonus {
+        align:right;
+        position:fixed;
+        bottom:140px;
+        right:0px;
+        height:40px;
+        width:100px;
+        background-color:maroon;
+        font-size:15px;
+      }
        body, html {
         background:repeating-radial-gradient(ellipse, #682503 97%, #FF00FF 100%);
         background-size:cover;
@@ -190,7 +200,7 @@
    <div class='content'>
      <img id='albumCover'src='TrapezeSwinger.png'alt='albumCover'><li id='artist'><b>Iron and Wine</b></li><li id='songTitle'>The Trapeze Swinger</br>(and this bizarre solo</br>on a recorder)</li><audio controls><source src='TrapezeSwinger.mp3'></audio>
    </div>
-  <button id="bonus" onclick="document.location='OneDecade.html'">Exclusive song: One More Decade</button>
+  <button id="bonus" onclick="document.location='OneDecade.html'">Exclusive song:</br>One More Decade</button>
   <script>
     var coll = document.getElementsByClassName('subgenre');
     var i;
