@@ -1,15 +1,14 @@
 <!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vinyl Forever</title><link rel="icon"type="image/x-icon"href="MiniPara.png">
   <body>
-    <button class="backward" style="align:right;position:fixed;bottom:70px;right:0px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px;" onclick="document.location='HipHop.html'"><span>&#8678;</span></br><p><b>Hip Hop</b></p></button>      
-    <button class="homepage" style="align:right;position:fixed;bottom:0px;right:0px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:10px;" onclick="document.location='index.html'"><b>.... --- -- .</b></button>
+    <button class="backward" style="align:right;position:fixed;bottom:70px;right:0px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:bold;" onclick="document.location='HipHop.html'"><span>&#8678;</span></br><p><b>Hip Hop</b></p></button>      
+    <button class="homepage" style="align:right;position:fixed;bottom:0px;right:0px;height:65px;width:100px;background-color:maroon;font-size:20px;font-weight:bold;" onclick="document.location='index.html'"><b>.... --- -- .</b></button>
     <img src="SushBackground.png" alt="KittyDJ" id="kitty" style="max-width:400px;height:400px;top:0px;right:0px;position:fixed;">
   </body>
     <style>
       #bonus {
         position:absolute;
-        background-color:maroon;
         font-size:15px;
-        font-weight:20px;
+        font-weight:bold;
       }
        body, html {
         background:repeating-radial-gradient(ellipse, #682503 97%, #FF00FF 100%);
@@ -80,6 +79,8 @@
      }
     @media screen and (max-width:600px) {
       #bonus {
+        position:fixed;
+        background-color:maroon;
         align:right;
         right:0px;
         bottom:140px;
@@ -124,11 +125,11 @@
     }
     @media screen and (min-width:1080px;) {
       #bonus {
+        position:absolute;
         align:top;
         top:0px;
         right:400px;
         background-color:yellow;
-        color:black;
       }
 </style>
 </head>
