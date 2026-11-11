@@ -3,45 +3,31 @@
   body, html {
     background-color:rgba(0,126,255,1);
   } 
-  .sidebar {
-    height:100%;
-    width:160px;
-    position:fixed;
-    z-index:1;
-    top:0;
-    left:0;
-    background-color:#111;
-    overflow-x:hidden;
-    padding-top:20px;
-  }
-  .sidebar a {
-    padding:6px 8px 6px 16px;
-    text-decoration:none;
-    font-size:25px;
-    color:#818181;
-    display:block;
-  }
-  .sidebar a:hover {
-    color:#f1f1f1;
-  }
-  .main {
-    margin-left:160px;
-    padding:0px 10px;
-  }
-  @media screen and (max-height: 450px;) {
-    .sidebar{padding-top:15px;}
-    .sidebar a{font-size:18px;}
+  .audioPlayer {
+    width:300px;
+    margin:20px;
   }
 </style>
 <body>
-  <div class="sidebar">
-    <a href='#'>Genre 1</a>
-    <a href='#'>Genre 2</a>
-    <a href='#'>Genre 3</a>
-    <a href='#'>Genre 4</a>
+  <div class="audioPlayer">
+    <audio controls>
+      <source src="OneDecade.mp3" type="audio/mpeg">
+    </audio>
   </div>
+  <script src="script.js"></script>
+  <script>
+    const audio = document.querySelector("audio");
 
-  <div class="main">
-  </div>
+    const playButton = document.getElementById("play-button");
+    const pauseButton = document.getElementById("pause-button");
+
+    playButton.addEventListener("click", () => {
+      audio.play();
+    });
+
+    pauseButton.addEventListener("click", () => {
+      audio.pause();
+    });
+  </script>
 </body>
 </html>
