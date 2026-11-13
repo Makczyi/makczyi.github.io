@@ -6,18 +6,30 @@
   audio::-webkit-media-controls-panel {
     background-color:rgba(0,126,255,1);
   }
+  .containerOne {
+    display:flex;
+    flex-direction:column;
+    background-color:Red;
+  }
+  .containerTwo {
+    display:flex;
+    flex-direction:column;
+    background-color:Purple;
+  }
 </style>
 <body>
-  <h2>Genre</h2>
-  <h4>Artist</h4>
-  <p>Song title</p>
-  <audio class="song" id="nineteen" controls>
-    <source src="1985.mp3">
-  </audio>
-</br>
-   <audio class="song" id='pencegenc' controls>
-     <source src="50PenceGenc.mp3">
-   </audio>
+  <div class="containerOne">
+    <div><h1>Genre!</h1></div>
+    <div><h3>Artist!</h3></div>
+    <div><h4>Song Title!</h4></div>
+    <div><audio controls><source src="1985.mp3"></audio></div>
+  </div>
+  <div class="containerTwo">
+    <div><h1>Genre!</h1></div>
+    <div><h3>Artist!</h3></div>
+    <div><h4>Song Title!</h4></div>
+    <div><audio controls><source src="Abidjan.mp3"></audio></div>
+  </div>
 </body>
 <script>
   const songs = [...document.querySelectorAll('.song')];
