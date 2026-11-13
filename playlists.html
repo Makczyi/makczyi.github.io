@@ -3,6 +3,9 @@
   body, html {
     background-color:rgba(0,126,255,1);
   } 
+  .content li {
+    list-style:none;
+  }
   audio::-webkit-media-controls-panel {
     background-color:rgba(0,126,255,1);
   }
@@ -17,12 +20,12 @@
     background-color:Purple;
   }
   #funk {
-    font-size:30px;
-    background-color:rgb(100,149,237);
+    font-weight:30px;
+    color:rgb(100,149,237);
   }
   #soul {
-    font-size:30px;
-    background-color:rgb(100,149,237);
+    font-weight:30px;
+    color:rgb(0,163,108);
   }
 </style>
 <body>
@@ -32,7 +35,7 @@
     <li id="soul">Soul</li>
   </ul>
   <div id="containerOne">
-    <div><h1>Genre!</h1></br><h3>Genre!</h3></br><h4>Song Title!</h4></div>
+    <div><ul><li><h1>Genre</h1></li><li><h3>Artist</h3></li><li><h4>Song Title</h4></li></ul></div>
     <div><audio class="song" controls><source src="1985.mp3"></audio></div>
   </div>
   <div id="containerTwo">
