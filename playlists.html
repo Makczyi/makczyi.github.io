@@ -3,18 +3,18 @@
   body, html {
     background-color:rgba(0,126,255,1);
   } 
-  #containerOne li {
+  .containerOne li {
     list-style:none;
   }
   audio::-webkit-media-controls-panel {
     background-color:rgba(0,126,255,1);
   }
-  #containerOne {
+  .containerOne {
     display:flex;
     flex-direction:column;
     background-color:Red;
   }
-  #containerTwo {
+  .containerTwo {
     display:flex;
     flex-direction:column;
     background-color:Purple;
@@ -29,16 +29,23 @@
     font-weight:normal;
     color:rgb(0,163,108);
   }
+  .genreContainer {
+    display:inline;
+  }
 </style>
 <body>
   <h1><strong>Genres are color coded. A mix of colors in the container indicates a mix of genres</strong></h1>
-  <h2 id="funk" style="font-size:50px;font-weight:bold;color:Red;">Funk</h2><h2 id="soul" style="font-size:50px;font-weight:bold;color:Pink;">Soul</h2>
-  <div id="containerOne">
+  <div class="genreContainer">
+    <div><h2 id="funk" style="font-size:50px;font-weight:bold;color:Red;">Funk</h2></div>
+    <div><h2 id="soul" style="font-size:50px;font-weight:bold;color:Pink;">Soul</h2></div>
+  </div>
+  
+  <div class="containerOne">
     <div><h1>Day 1</h1></div>
     <div><h3>Artist name - Song title</h3></div>
     <div><audio class="song" controls><source src="1985.mp3"></audio></div>
   </div>
-  <div id="containerTwo">
+  <div class="containerTwo">
     <div><h1>Genre!</h1></div>
     <div><h3>Artist!</h3></div>
     <div><h4>Song Title!</h4></div>
