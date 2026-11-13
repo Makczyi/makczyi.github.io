@@ -1,10 +1,39 @@
-<!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html><html><head lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Playlists Forever</title></head>
 <style>
   body, html {
     background-color:rgba(0,126,255,1);
   } 
 </style>
 <body>
-  <h1>Not yet..</h1>
+  <audio class="song" controls>
+    <source src="1985.mp3">
+  </audio>
+   <audio class="song" controls>
+     <source src="50PenceGenc.mp3">
+   </audio>
 </body>
+<script>
+  const songs = [...document.querySelectorAll('.song')];
+
+  songs.forEach(song => song.ontimeupdate = nextSong);
+
+  function nextSong(e) {
+
+    const end = this.duration;
+
+    let now = this.currentTime;
+
+    if (end <= now) {
+
+      const position = songs.indexOf(this);
+
+      if (position === songs.length - 1) {
+        songs[0].play();
+
+      } else {
+        songs[position + 1].play();
+      }
+    }
+  }
+</script>
 </html>
