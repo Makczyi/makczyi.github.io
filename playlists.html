@@ -6,25 +6,25 @@
   audio::-webkit-media-controls-panel {
     background-color:rgba(0,126,255,1);
   }
-  .containerOne {
+  #containerOne {
     display:flex;
     flex-direction:column;
     background-color:Red;
   }
-  .containerTwo {
+  #containerTwo {
     display:flex;
     flex-direction:column;
     background-color:Purple;
   }
 </style>
 <body>
-  <div class="containerOne">
+  <div class="song" id="containerOne">
     <div><h1>Genre!</h1></div>
     <div><h3>Artist!</h3></div>
     <div><h4>Song Title!</h4></div>
     <div><audio controls><source src="1985.mp3"></audio></div>
   </div>
-  <div class="containerTwo">
+  <div class="song" id="containerTwo">
     <div><h1>Genre!</h1></div>
     <div><h3>Artist!</h3></div>
     <div><h4>Song Title!</h4></div>
